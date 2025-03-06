@@ -1,5 +1,5 @@
 # Homer's Living Network
-
+**Daniel Barrera Rivera**
 ## Exploring Character Networks Across English Translations of the Odyssey
 
 Welcome to the digital home of "Homer's Living Network," a digital humanities project analyzing how character relationships in Homer's Odyssey have been reimagined across centuries of English translations.
