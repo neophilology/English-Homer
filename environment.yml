@@ -1,0 +1,30 @@
+name: odyssey-nlp
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn  # Includes TF-IDF tools
+  - nltk
+  - spacy
+  - gensim  # For topic modeling (LDA, Word2Vec)
+  - pyLDAvis  # Visualization for LDA topics
+  - textblob  # Simple NLP processing
+  - tqdm  # Progress bars for processing text
+  - lxml  # Parsing TEI-XML if needed
+  - beautifulsoup4  # HTML/XML parsing
+  - matplotlib  # Standard visualization
+  - seaborn  # Statistical data visualization
+  - plotly  # Interactive visualizations
+  - wordcloud  # Generate word clouds
+  - networkx  # Visualizing text relationships
+  - jupyter  # Notebook support
+  - pip
+  - pip:
+      - transformers  # Hugging Face NLP models
+      - sentence-transformers  # BERT-based embeddings
+      - spacy-langdetect  # Language detection in Spacy
+      - altair  # Declarative visualization
