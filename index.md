@@ -18,6 +18,7 @@ By combining network analysis and data science with traditional philology and li
 - [Research Questions](research-questions.md) - The core inquiries driving our analysis
 - [Research Design](ResearchDesign.md) - Our methodological approach and analytical framework
 - [Data Overview](data.md) - Documentation of our translation corpus and datasets
+- [Corpus Schema](XML-schema-corpus.md) – Describes the structure of selected translations
 - [Network Visualizations](visualizations.md) - Interactive character networks by translation era
 - [Translation Timeline](timeline.md) - Chronology of English Odyssey translations
 - [Preliminary Findings](findings.md) - Initial results and observations
