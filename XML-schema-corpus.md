@@ -1,5 +1,4 @@
 # Corpus XML Schema
-# Corpus XML Schema
 ## A Custom Minimal Structure Based on TEI
 
 The Homer Living Network project incorporates multiple translations with XML structure. The schema follows guidelines from TEI 2.0 in a minimal implementation that will be gradually expanded throughout the project. An updated list of structured translations will be regularly published here.
@@ -9,13 +8,13 @@ The Homer Living Network project incorporates multiple translations with XML str
 | Title    | Text | Author                          | Year | Period        | Span    | Verse | Publisher                    | Edition | Source   | Language | Country | Reception |
 |----------|------|----------------------------------|------|---------------|---------|-------|------------------------------|---------|----------|----------|---------|-----------|
 | Odyssey  | 1    | Georges Chapman                 | 1615 | Renaissance   | <1700   | TRUE  | First                        | Gutemberg | English  | England  | Positive |
-| Odyssey  | 0    | John Ogilby                     | 1665 | Renaissance   | <1700   |       |                              |         |          |          |         |
-| Odyssey  | 0    | Thomas Hobbes                   | 1675 | Renaissance   | <1700   |       |                              |         |          |          |         |
+| Odyssey  | 1    | John Ogilby                     | 1665 | Renaissance   | <1700   |       |                              |         |          |          |         |
+| Odyssey  | 1    | Thomas Hobbes                   | 1675 | Renaissance   | <1700   |       |                              |         |          |          |         |
 | Odyssey  | 1    | Alexander Pope                  | 1725 | Enlightenment | <1820   |       |                              |         |          |          |         |
 | Odyssey  | 1    | William Cowper                  | 1791 | Enlightenment | <1820   |       |                              |         |          |          |         |
-| Odyssey  | 0    | H.F. Cary                       | 1823 | Enlightenment | <1820   |       |                              |         |          |          |         |
-| Odyssey  | 0    | William Sotheby                 | 1834 | Enlightenment | <1820   |       |                              |         |          |          |         |
-| Odyssey  | 0    | Theodore Alois Buckley          | 1851 | Victorian     | <1900   |       |                              |         |          |          |         |
+| Odyssey  | 1    | H.F. Cary                       | 1823 | Enlightenment | <1820   |       |                              |         |          |          |         |
+| Odyssey  | 1    | William Sotheby                 | 1834 | Enlightenment | <1820   |       |                              |         |          |          |         |
+| Odyssey  | 1    | Theodore Alois Buckley          | 1851 | Victorian     | <1900   |       |                              |         |          |          |         |
 | Odyssey  | 1    | P. S. Worsley                   | 1861 | Victorian     | <1900   | TRUE  | Edinburgh, W. Blackwood & Sons | First    | English  | England  | Positive |
 | Odyssey  | 0    | Dr. Giles                       | 1861 | Victorian     | <1900   |       |                              |         |          |          |         |
 | Odyssey  | 0    | Thomas Starling Norgate         | 1862 | Victorian     | <1900   |       |                              |         |          |          |         |
