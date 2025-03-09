@@ -1,8 +1,9 @@
 # Project Journal
 
-This is a learning log. The entries are insights into the process, lessons and mistakes.
+This is a learning log. The entries are insights into the process, lessons and mistakes, i.e, cautionary tales!
 
 I'll try to keep some keywords in each log to identify the area of each entry:
+
 - #file_management
 - #eda
 - #nlp
@@ -19,6 +20,12 @@ I'll try to keep some keywords in each log to identify the area of each entry:
 - #ethics
 
 ## March 8
+At this point I'm working in the *Minimum Viable Product (MVP)* of the research: comparative analysis of two translations **Wilson and Green** (most contemporary and easily cleaned), focused on **Lexical Diversity Analysis**. Five phases:
+    - Cleaning and preprocessing
+    - EDA
+    - Lexical Diversity Analysis
+    - Hypothesis testing
+    - Reporting findings
 
 ### Text Normalization Strategy #data_cleaning #nlp #file_management
 Managed to clean Wilson and Green's translations but found out that I may need to do a new folder with "normalizers", in which all that is left is text:
@@ -41,7 +48,7 @@ Important considerations for future text normalization steps:
 - Create a reversible process where possible to trace processing decisions
 
 ### Next Steps #workflow
-- [ ] Create a normalization config file to track parameters
+- [ ] Create a normalization config file to track parameters (to be done later in the project, not in the MVP)
 - [ ] Build evaluation metrics to assess normalization quality
 - [ ] Consider how to handle edge cases (e.g., hyphenated words, contractions)
 - [ ] Test normalization on a small sample before applying to full corpus
@@ -49,13 +56,17 @@ Important considerations for future text normalization steps:
 ## Best Practices for NLP Projects
 
 ### Data Management #file_management #documentation
-- Use consistent file naming conventions (e.g., `{source}_{date}_{version}.txt`)
+- Use consistent file naming conventions. For this project:
+    - `{title}_{translator}_{version}.txt`
+        - `title`- Odyssey (invariably)
+        - `translator`- Author of the translation
+        - `version`- Step in the translformation process: raw, cleaned, normalized, dataframed, TEI_XML_txts.
 - Maintain a data registry documenting source, version, and modifications
 - Create checkpoints after significant transformations
 - Store raw data separately and never modify it directly
 
 ### Preprocessing Pipeline #nlp #workflow
-- Build modular preprocessing steps that can be run independently
+- Build modular preprocessing steps that can be run independently: cleaned, normalized, dataframed, TEI_XML_txts.
 - Log preprocessing decisions and parameters
 - Consider creating a preprocessing report with statistics before/after each step
 - Test preprocessing on small samples before running on full dataset
