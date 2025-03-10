@@ -103,3 +103,38 @@ COLORS = [
     "#414A4F",  # mako
     "k",  # black
 ]
+
+
+# EXAMPLE USAGE IN NOTEBOOK
+"""
+%matplotlib inline
+import sys
+import os
+import matplotlib.pyplot as plt  
+
+# Add the directory containing visualization_utils.py to path
+sys.path.append("/path/to/modules")
+
+# Import the module
+import visualization_utils as viz
+
+# Set up visualization parameters
+colors = viz.setup_visualization_params()
+
+# Create a standard figure
+fig, ax = viz.create_figure()
+ax.plot([1, 2, 3], [4, 5, 6])
+ax.set_title("My Plot")
+
+# Create a custom-sized figure
+fig, ax = viz.create_figure(width=16, height=9)
+
+# Ensure COLORS exists and is accessible
+if hasattr(viz, "COLORS") and len(viz.COLORS) > 2:
+    plt.plot([1, 2, 3], [4, 5, 6], color=viz.COLORS[2])  # Use color safely
+else:
+    print("Warning: viz.COLORS is not defined correctly.")
+
+# Save the figure
+viz.save_figure(fig, "my_analysis_plot.png")
+"""
