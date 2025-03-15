@@ -1,4 +1,4 @@
-![Banner](assets/images/odyssey-network-banner.png)
+![assets/images/Dan_BW02.png](./assets/images/Dan_BW02.png)
 # Homer's Living Network
 **Daniel Barrera Rivera**
 
