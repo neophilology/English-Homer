@@ -84,5 +84,8 @@
 - [MVP_Green-Wilson/plots/tfidf_heatmap(W).png](./MVP_Green-Wilson/plots/tfidf_heatmap(W).png) - Add description here
 - [MVP_Green-Wilson/plots/tfidf_heatmap(W).pdf](./MVP_Green-Wilson/plots/tfidf_heatmap(W).pdf) - Add description here
 - [functions/tokenizer.py](./functions/tokenizer.py) - Add description here
+- [assets/images/Dan_BW02.png](./assets/images/Dan_BW02.png) - Add description here
+- [assets/images/Aga_mask.png](./assets/images/Aga_mask.png) - Add description here
+- [assets/images/neoPHilology-BANNER-wLogo.png](./assets/images/neoPHilology-BANNER-wLogo.png) - Add description here
 - [cleaners_by_author/clean_wilson.ipynb](./cleaners_by_author/clean_wilson.ipynb) - Add description here
 - [cleaners_by_author/clean_green.ipynb](./cleaners_by_author/clean_green.ipynb) - Add description here

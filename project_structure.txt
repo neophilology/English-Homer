@@ -68,6 +68,11 @@
 ├── XML-schema-corpus.md
 ├── __pycache__
 │   └── visualization_utils.cpython-311.pyc
+├── assets
+│   └── images
+│       ├── Aga_mask.png
+│       ├── Dan_BW02.png
+│       └── neoPHilology-BANNER-wLogo.png
 ├── cleaners_by_author
 │   ├── clean_green.ipynb
 │   └── clean_wilson.ipynb
@@ -86,8 +91,10 @@
 │   ├── sentence_frequency_by_book.png
 │   └── words_frequency_by_book.png
 ├── environment.yml
+├── file_links.md
 ├── functions
 │   └── tokenizer.py
+├── generate_links.py
 ├── growth_journal.md
 ├── index.md
 ├── normalizers_by_author
@@ -99,4 +106,4 @@
 ├── texter_epub_bs4.ipynb
 └── visualization_utils.py
 
-15 directories, 85 files
+17 directories, 90 files

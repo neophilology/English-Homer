@@ -1,5 +1,8 @@
+![Banner](assets/images/odyssey-network-banner.png)
 # Homer's Living Network
 **Daniel Barrera Rivera**
+
+
 ## Exploring Character Networks Across English Translations of the Odyssey
 
 Welcome to the digital home of "Homer's Living Network," a digital humanities project analyzing how character relationships in Homer's Odyssey have been reimagined across centuries of English translations.
@@ -13,111 +16,6 @@ This research traces the evolution of Homeric character networks from the first 
 By combining network analysis and data science with traditional philology and literary history, we uncover patterns in how cultural priorities, gender perspectives, and literary movements have shaped our understanding of Homer's world.
 
 ## Project Navigation
-```text
-.
-├── EDA_by_Author
-│   ├── Green_EDA
-│   │   ├── Green_EDA.ipynb
-│   │   ├── odyssey_characters_heatmap.png
-│   │   ├── odyssey_keyword_heatmap.png
-│   │   └── plots
-│   │       ├── Green-Boxplots_Sentences_Words_Lines.png
-│   │       ├── Green-Character_Frequency_Heatmap.png
-│   │       ├── Green-KDE_Lines_Sentences_Words.png
-│   │       ├── Green-Keyword_Frequency.png
-│   │       ├── Green-Keyword_Frequency_Heatmap.png
-│   │       ├── Green-Scatter_Words_Lines.png
-│   │       ├── Green-TFIDF_bigrams.png
-│   │       ├── Green-TF_TFIDF_wordcloud_B1-2.png
-│   │       ├── Green-Top_Words.png
-│   │       └── Green-Trends_Lines_Words_Sentences.png
-│   └── Wilson_EDA
-│       ├── Wilson_EDA.ipynb
-│       └── plots
-│           ├── Odyssey_Wilson-characters_heatmap.png
-│           ├── Odyssey_Wilson-keyword_heatmap.png
-│           ├── Wilson-Boxplots_Sentences_Words_Lines.png
-│           ├── Wilson-Character_Frequency.png
-│           ├── Wilson-KDE_Lines_Sentences_Words.png
-│           ├── Wilson-Scatter_Words_Lines.png
-│           ├── Wilson-TFIDF_Bigrams.png
-│           ├── Wilson-TF_TFIDF_wordcloud_B1-2.png
-│           ├── Wilson-Top_Words.png
-│           └── Wilson-Trends_Lines_Words_Sentences.png
-├── LICENSE
-├── MVP_Green-Wilson
-│   ├── MVP_Lexical.ipynb
-│   ├── MVP_Lexical.pdf
-│   ├── MVP_plots
-│   │   ├── ITIDF_Distribution_Green.png
-│   │   ├── ITIDF_Distribution_Wilson.png
-│   │   ├── MVP-TFIDF_heatmap(G).png
-│   │   ├── MVP-TFIDF_heatmap(G–25words).png
-│   │   ├── MVP-TFIDF_heatmap(G–50words).png
-│   │   ├── MVP-TFIDF_heatmap(W).png
-│   │   ├── MVP-TFIDF_heatmap(W–25words).png
-│   │   ├── MVP-TFIDF_heatmap(W–50words).png
-│   │   ├── MVP-TTR_distribution.png
-│   │   ├── MVP-TTR_histogram.png
-│   │   ├── MVP-TTR_kdeplot.png
-│   │   ├── MVP-TTR_violinplot.png
-│   │   ├── MVP-Zipf_bootstrap.png
-│   │   ├── MVP-Zipf_distribution.png
-│   │   ├── Q-Q_Plot_Green.png
-│   │   └── Q-Q_Plot_Wilson.png
-│   ├── Solving_tf-idf.ipynb
-│   ├── df_tfidf_G.csv
-│   ├── df_tfidf_W.csv
-│   ├── plots
-│   │   ├── ITIDF_Distribution_Green.png
-│   │   ├── ITIDF_Distribution_Wilson.png
-│   │   ├── Q-Q_Plot_Green.png
-│   │   ├── Q-Q_Plot_Wilson.png
-│   │   ├── tfidf_heatmap(G).pdf
-│   │   ├── tfidf_heatmap(G).png
-│   │   ├── tfidf_heatmap(W).pdf
-│   │   └── tfidf_heatmap(W).png
-│   ├── tf-idf_function.ipynb
-│   └── tf-idf_function.pdf
-├── README.md
-├── ResearchDesign.md
-├── XML-schema-corpus.md
-├── __pycache__
-│   └── visualization_utils.cpython-311.pyc
-├── cleaners_by_author
-│   ├── clean_green.ipynb
-│   └── clean_wilson.ipynb
-├── data.md
-├── dataframers_by_author
-│   ├── dataframer_Green.ipynb
-│   ├── dataframer_Wilson.ipynb
-│   ├── lines_frequency_by_book.png
-│   ├── plots
-│   │   ├── Green-lines_freq.png
-│   │   ├── Green-sentence_freq.png
-│   │   ├── Green-words_freq_bB.png
-│   │   ├── Wilson-lines_freq_bB.png
-│   │   ├── Wilson-sentence_freq.png
-│   │   └── Wilson-words_frequency_bB.png
-│   ├── sentence_frequency_by_book.png
-│   └── words_frequency_by_book.png
-├── environment.yml
-├── functions
-│   └── tokenizer.py
-├── growth_journal.md
-├── index.md
-├── normalizers_by_author
-│   ├── normalizer_Green.ipynb
-│   └── normalizer_Wilson.ipynb
-├── project_structure.txt
-├── research-questions.md
-├── text_cleaning.py
-├── texter_epub_bs4.ipynb
-└── visualization_utils.py
-
-15 directories, 85 files
-
-
 
 
 
@@ -126,23 +24,18 @@ By combining network analysis and data science with traditional philology and li
 - [Research Design](ResearchDesign.md) - Our methodological approach and analytical framework
 - [Data Overview](data.md) - Documentation of our translation corpus and datasets
 - [Corpus Schema](XML-schema-corpus.md) – Describes the structure of selected translations
-- [Network Visualizations](visualizations.md) - Interactive character networks by translation era
-- [Translation Timeline](timeline.md) - Chronology of English Odyssey translations
-- [Preliminary Findings](findings.md) - Initial results and observations
 
-## Explore the Data
 
-- [Translation Comparison Tool](tools/translation-comparison.html) - Compare epithets and speech patterns
-- [Character Centrality Dashboard](tools/character-centrality.html) - Track importance of characters over time
-- [Translation Network Gallery](gallery.md) - Visual representations of each translation's network
-- [Data Repository](https://github.com/username/homers-living-network) - Access our code and datasets
+
+
+
 
 ## Latest Updates
 
+
 - **March 2025**: Added network visualizations for Emily Wilson's 2018 translation
 - **February 2025**: Published preliminary findings on gender representation across translation eras
-- **January 2025**: Released beta version of the Translation Comparison Tool
-- **December 2024**: Completed corpus preprocessing and initial network extraction
+
 
 ## About the Project
 
@@ -156,3 +49,16 @@ For questions, collaboration requests, or more information:
 - Email: [neophilology@](mailto:neophilology@gmail.com)
 - LinkedIn: []()
 - GitHub: [https://github.com/neophilology](https://github.com/neophilology)
+
+## Future Commits (I'm only Human, Not procrastinating)
+
+- [Network Visualizations](visualizations.md) - Interactive character networks by translation era
+- [Translation Timeline](timeline.md) - Chronology of English Odyssey translations
+- [Preliminary Findings](findings.md) - Initial results and observations
+
+## Explore the Data
+
+- [Translation Comparison Tool](tools/translation-comparison.html) - Compare epithets and speech patterns
+- [Character Centrality Dashboard](tools/character-centrality.html) - Track importance of characters over time
+- [Translation Network Gallery](gallery.md) - Visual representations of each translation's network
+- [Data Repository](https://github.com/username/homers-living-network) - Access our code and datasets
