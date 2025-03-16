@@ -22,7 +22,7 @@ By combining data science with traditional philology and cultural studies, the p
 
 Here is the minimum viable product (MVP) that proves the research works:
 
-- [**The Notebook!** - MVP Lexical Analysis](./MVP_Green-Wilson/MVP_Lexical.ipynb)
+- [**The Notebook!** - MVP Lexical Analysis](https://nbviewer.org/github/neophilology/English-Homer/blob/main/MVP_Green-Wilson/MVP_Lexical.ipynb)
 
 It focuses on statistical analysis and lexical diversity of the best contemporary translations of the Odyssey:
 - Peter Green, 2018, University of California Press
