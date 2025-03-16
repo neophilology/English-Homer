@@ -4,7 +4,7 @@
 
 **Daniel Barrera Rivera**
 
-## Exploring Character Networks Across English Translations of the Odyssey
+## Exploring the Homeric Rhizome Across English Translations of the Odyssey
 
 Welcome to the digital home of "Homer's Living Network," a digital humanities project analyzing how Homer's Odyssey has been reimagined across centuries, becoming part of the English literary tradition.
 
@@ -14,7 +14,7 @@ This research begins by focusing on translation. It traces the evolution of the 
 
 By combining data science with traditional philology and cultural studies, the patterns that have shaped our understanding of Homer's world reflect how we have shaped Homer in return.
 
-<img src="./assets/images/Aga_mask.png" alt="Agamemnon Gold Mask" width="400"/>
+<img src="./assets/images/Aga_mask.png" alt="Agamemnon Gold Mask" width="600"/>
 
 ## Project Navigation
 
