@@ -48,7 +48,7 @@ In here you can find notebooks for preprocessing, like pruning the text and norm
 
 ## Latest Updates
 
-- **March 2025**: Project is live!
+- **March 16th, 2025**: Project is live!
 
 ## About the Project
 
