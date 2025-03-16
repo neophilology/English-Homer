@@ -17,6 +17,19 @@ By combining data science with traditional philology and cultural studies, the p
 
 ## Project Navigation
 
+### MVP
+Here it is the minimum viable product (MVP) that proves the research works. 
+
+- [MVP_Green-Wilson/MVP_Lexical.ipynb](./MVP_Green-Wilson/MVP_Lexical.ipynb) –– The Notebook!
+
+It focuses on statistical analysis and lexical diversity of the best contemporary translations of the Odyssey:
+- Peter Green, 2018, University of California Press
+- Emily Wilson, 2017, W.W. Norton & Company
+
+
+### Here Comes the Cleaners
+In here you can find notebooks for preprocessing, like prunning the text and normilizing it. 
+
 
 
 - [Project Description](README.md) - An introduction to our research goals and methodology
