@@ -1,19 +1,19 @@
-![assets/images/Dan_BW02.png](./assets/images/Dan_BW02.png)
+[assets/images/Dan_BW02.png](./assets/images/Dan_BW02.png)
 # Homer's Living Network
 **Daniel Barrera Rivera**
 
 
 ## Exploring Character Networks Across English Translations of the Odyssey
 
-Welcome to the digital home of "Homer's Living Network," a digital humanities project analyzing how character relationships in Homer's Odyssey have been reimagined across centuries of English translations.
-
-![The Odyssey Network](assets/images/odyssey-network-banner.png)
+Welcome to the digital home of "Homer's Living Network," a digital humanities project analyzing how Homer's Odyssey had been reimagined across centuries, becoming part of the English literary tradition.
 
 ## Project Overview
 
-This research traces the evolution of Homeric character networks from the first English translation in 1615 to contemporary renderings, using computational methods to reveal how translators have transformed the social landscape of ancient epic for English-speaking audiences.
+This research begins by focusing on translation. It traces the evolution of the Homeric networks from the first English translation in 1615 to contemporary renderings, using computational methods to reveal how translators have transformed the ancient epic for English-speaking audiences.
 
-By combining network analysis and data science with traditional philology and literary history, we uncover patterns in how cultural priorities, gender perspectives, and literary movements have shaped our understanding of Homer's world.
+By combining data science with traditional philology and cultural studies, the patterns that have shaped our understanding of Homer's world reflect how have shape Homer in return.
+
+[assets/images/Aga_mask.png](./assets/images/Aga_mask.png)
 
 ## Project Navigation
 
