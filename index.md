@@ -1,4 +1,4 @@
-[assets/images/Dan_BW02.png](./assets/images/Dan_BW02.png)
+[assets/images/neoPHilology-BANNER-wLogo.png](./assets/images/neoPHilology-BANNER-wLogo.png)
 # Homer's Living Network
 **Daniel Barrera Rivera**
 
@@ -33,18 +33,17 @@ By combining data science with traditional philology and cultural studies, the p
 ## Latest Updates
 
 
-- **March 2025**: Added network visualizations for Emily Wilson's 2018 translation
-- **February 2025**: Published preliminary findings on gender representation across translation eras
+- **March 2025**: Project is live!
 
 
 ## About the Project
 
 This research is being conducted as part of a dissertation at the University of Tübingen, combining approaches from computational linguistics, classical reception studies, and translation theory.
 
-The project aims to demonstrate how computational methods can reveal patterns in translation history that might otherwise remain invisible, while contributing to our understanding of how ancient texts live and transform across linguistic and cultural boundaries.
+The project aims to demonstrate how computational methods can reveal patterns in literary and cultural history that effectivey transform out concept of tradition––that living story that keeps telling and retelling our stoy.
 
 ## Contact
-
+[assets/images/Dan_BW02.png](./assets/images/Dan_BW02.png)
 For questions, collaboration requests, or more information:
 - Email: [neophilology@](mailto:neophilology@gmail.com)
 - LinkedIn: []()
