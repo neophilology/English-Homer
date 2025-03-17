@@ -18,9 +18,9 @@ By combining data science with traditional philology and cultural studies, the p
 
 ## Project Navigation
 
-### MVP
+### :eyes: Dr Dellert, please review my -> MVP 
 
-Here is the minimum viable product (MVP) that proves the research works:
+Here is the minimum viable product (MVP) to try out if the research approach works:
 
 - [**The Notebook!** - MVP Lexical Analysis](https://nbviewer.org/github/neophilology/English-Homer/blob/main/MVP_Green-Wilson/MVP_Lexical.ipynb)
 
