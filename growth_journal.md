@@ -1,9 +1,8 @@
 # Project Journal
 
-This is a learning log. The entries are insights into the process, lessons and mistakes, i.e, cautionary tales!
+This is a learning log. The entries are insights into the process, lessons and mistakes, i.e., cautionary tales!
 
 I'll try to keep some keywords in each log to identify the area of each entry:
-
 - #file_management
 - #eda
 - #nlp
@@ -18,6 +17,38 @@ I'll try to keep some keywords in each log to identify the area of each entry:
 - #preprocessing
 - #deployment
 - #ethics
+
+## March 17
+
+#nlp #eda #workflow #data_cleaning
+
+After a week's work, I've gained deeper insights into the organization of the Odyssey. The exploratory analysis reveals broad strokes of the text's distribution patterns.
+
+The minimum viable product (MVP_Lexical.ipynb) worked successfully. I analyzed Green and Wilson's translations through lexical frequencies and diversity methods (TTR, Zipf's Law, TF-IDF). From cleaning to hypothesis testing, the pipeline proved highly productive.
+
+The immediate conclusion is that both Green and Wilson follow the general trends in vocabulary diversity, TTR, and Zipf's Law. However, when employing a tool dedicated to observing significant oddities like TF-IDF, the differences become statistically significant.
+
+### Next Steps:
+1. Add more translations to the corpus:
+   - George Chapman
+   - Thomas Hobbes
+   - William Cullen Bryant
+   - William Morris
+   - Samuel Butler
+   - Robert Fitzgerald
+   - Robert Fagles
+
+I'll process these from most contemporary to most distant (easiest to hardest).
+
+After expanding the corpus, I'll complete the etymological analysis and begin implementing syntactic complexity methods.
+
+### Workflow Reflection:
+I'll continue with the modular-notebook method—separate notebooks for cleaning, normalizing, dataframe creation, and EDA by author. This approach works wonders, especially for debugging. However, I recognize the advantages of an end-to-end pipeline. If time permits, I'll explore either:
+
+a) An end-to-end Python script
+b) A master script that calls small, discrete scripts
+
+The advantage of the modular-notebook approach is that it gives me the opportunity to check immediate results and verify if the cleaning and normalizing methods are effective—which lines to cut, where to start, where to end, etc.
 
 ## March 8
 At this point I'm working in the *Minimum Viable Product (MVP)* of the research: comparative analysis of two translations **Wilson and Green** (most contemporary and easily cleaned), focused on **Lexical Diversity Analysis**. Five phases:
