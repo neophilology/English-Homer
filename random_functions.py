@@ -72,3 +72,8 @@ keywords = [word for word, count in counter.most_common(10)]
 keywords_count = counter.most_common(10)
 print(keywords)
 print(keywords_count)
+
+# finding a token in token columns
+token = "penelope"
+penelopes = df["tokens"].map(lambda tokens: token in tokens).sum()
+penelopes
