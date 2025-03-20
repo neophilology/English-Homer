@@ -44,3 +44,29 @@ danB_plotstyle = {
 
 # Apply the settings
 plt.rcParams.update(danB_plotstyle)
+
+
+def save_figure(
+    fig, filename, dpi=300, format="png", bbox_inches="tight", pad_inches=0.4
+):
+    """
+    Save the given Matplotlib figure with specific parameters.
+
+    Args:
+        fig (matplotlib.figure.Figure): The figure to save.
+        filename (str): File path or name.
+        dpi (int, optional): Dots per inch (default: 300).
+        format (str, optional): File format (default: "png").
+        bbox_inches (str, optional): Bounding box setting (default: "tight").
+        pad_inches (float, optional): Padding around the figure (default: 0.4).
+    """
+    fig.savefig(
+        filename, dpi=dpi, format=format, bbox_inches=bbox_inches, pad_inches=pad_inches
+    )
+    print(f"Figure saved as {filename}.{format} at {dpi} DPI")
+
+
+# Example usage:
+# fig, ax = plt.subplots()
+# ax.plot([1, 2, 3], [4, 5, 6])
+# save_figure(fig, "my_plot", dpi=300, format="pdf")
