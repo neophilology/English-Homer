@@ -1,18 +1,27 @@
+"""_summary_
+
+Returns:
+    _type_: _description_
+"""
+
 ####################################################################################################
-import os
+# Import Libraries
+####################################################################################################
+
 import re
-import string
-import numpy as np
+
+# import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-from wordcloud import WordCloud
-from collections import Counter
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-from nltk.stem import WordNetLemmatizer
-from nltk.tokenize import RegexpTokenizer
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfVectorizer
+
+
+# import nltk
+
+
+####################################################################################################
+# Import Libraries
+####################################################################################################
+
+print("Functions for NLP are live! use e.<function> to call them.")
 
 
 ####################################################################################################
@@ -75,6 +84,8 @@ def list_into_books(lines_list, book_breaker):
 ####################################################################################################
 # Populate Odyssey DF
 ####################################################################################################
+
+
 def book_into_df(author, year, title, list_books):
     """
     Splits a list_books into rows and creates a DataFrame.
@@ -156,8 +167,66 @@ def count_sentences(text):
 
 
 ####################################################################################################
-# Populate Odyssey DF
+# Count words
 ####################################################################################################
+
+
+def count_words(text):
+    """Count the number of words in a text.
+
+    Args:
+        text (list or str): The text as a list of lines or a string.
+
+    Returns:
+        int: The number of words in the text.
+    """
+    if isinstance(text, list):
+        text = " ".join(text)  # Convert list of lines into a single string
+
+    if isinstance(text, float) and pd.isna(text):  # Check for NaN values
+        return 0
+
+    if not isinstance(text, str):  # Check for unexpected data types
+        return 0
+
+    return len(re.findall(r"\b\w+\b", text))  # Count words
+
+
+####################################################################################################
+# Remove newline characters in a list of strings
+####################################################################################################
+
+
+def remove_newline_character(text_list):
+    """Remove extra newlines from a list of strings.
+
+    Args:
+        text_list (list): A list of text lines.
+
+    Returns:
+        list: The list with extra newlines removed within each line.
+    """
+    return [
+        re.sub(r"\n+", "", line) for line in text_list
+    ]  # Apply to each element in the list
+
+
+####################################################################################################
+# Boolean check for missing values, columns and shape
+####################################################################################################
+
+
+def check_df(df):
+    """
+    Check for missing values, columns and shape of a DataFrame.
+    """
+    if df.isna().sum().sum() == 0:
+        print("No missing values")
+    else:
+        for col in df.columns:
+            if df[col].isna().sum() > 0:
+                print(f"Missing values in {col}")
+    print("\ndf columns:", df.columns, "\n\nShape:", df.shape)
 
 
 ####################################################################################################
@@ -165,15 +234,47 @@ def count_sentences(text):
 ####################################################################################################
 
 
-####################################################################################################
-# Populate Odyssey DF
-####################################################################################################
+def before_after_transformation(text_list, start_idx, end_idx, process_func):
+    """
+    Extracts a section of text between two indices in a list of strings
+    and compares before/after transformation.
+
+    Args:
+        text_list (list): A list of strings representing lines of text.
+        start_idx (int): The index where the extraction should start.
+        end_idx (int): The index where the extraction should end.
+        process_func (function): A function that processes the extracted section.
+
+    Returns:
+        None: Prints the before/after transformation results.
+    """
+    # Validate indices
+    if not (0 <= start_idx < len(text_list)) or not (0 <= end_idx < len(text_list)):
+        print("Error: Indices out of range.")
+        return
+
+    if start_idx >= end_idx:
+        print("Error: Start index must be before end index.")
+        return
+
+    # Extract the section
+    section = " ".join(
+        text_list[start_idx : end_idx + 1]
+    )  # Join selected lines into a single string
+
+    # Process the section
+    processed_section = process_func(section)
+
+    # Print results
+    print("Original section:\n")
+    print(section)
+    print("\n\nProcessed section:\n")
+    print(processed_section)
 
 
-####################################################################################################
-# Populate Odyssey DF
-####################################################################################################
-
+# Example usage with a list of text lines
+# Apply function with start and end index
+# before_after_transformation(text_lines, 3, 6, normalize_text)
 
 ####################################################################################################
 # Populate Odyssey DF
