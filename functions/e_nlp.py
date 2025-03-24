@@ -238,8 +238,12 @@ def check_df(df):
 # NLTK Pipeline for Tokenizing Text
 ####################################################################################################
 
+# NLTK Pipeline for Tokenizing Text
 # Includes lowercasing, tokenization, and stopword removal
 # Customizable stopwords with inclusions and exclusions
+
+import string
+from typing import List, Callable, Union, Set, Optional
 
 # Download necessary NLTK resources
 print("Downloading NLTK resources...")
@@ -442,18 +446,21 @@ class NLPPipeline:
         return pipeline
 
     def process_text(
-        self, text: str, pipeline: Optional[List[Callable]] = None
+        self, text: Union[str, List[str]], pipeline: Optional[List[Callable]] = None
     ) -> Union[str, List[str]]:
         """
-        Process a single text through the pipeline.
+        Process a single text (or list of texts) through the pipeline.
 
         Args:
-            text (str): Text to process
+            text (str or List[str]): Text or list of strings to process
             pipeline (List[Callable], optional): Custom pipeline to use
 
         Returns:
             Union[str, List[str]]: Processed text or tokens
         """
+        if isinstance(text, list):  # If input is a list, join it into a single string
+            text = " ".join(text)
+
         if pipeline is None:
             pipeline = self.get_pipeline()
 
@@ -481,8 +488,7 @@ class NLPPipeline:
         if pipeline is None:
             pipeline = self.get_pipeline()
 
-        tqdm.pandas(desc="Processing texts")
-        return series.progress_apply(lambda x: self.process_text(x, pipeline))
+        return series.apply(lambda x: self.process_text(x, pipeline))
 
     def process_dataframe(
         self,
@@ -506,25 +512,54 @@ class NLPPipeline:
         if text_column not in df.columns:
             raise ValueError(f"Column '{text_column}' not found in dataframe")
 
-        # Ensure pipeline is assigned
-        if pipeline is None:
-            pipeline = (
-                self.get_pipeline()
-            )  # Fetch the default pipeline if none is provided
-
-        # Check again to avoid NoneType errors
-        if not pipeline:
-            print("Warning: Pipeline is empty. No processing will be applied.")
-            return df.copy()
-
-        # Print pipeline steps in a human-readable format
-        print("\nProcessing pipeline steps:")
-        print(" → ".join([func.__name__ for func in pipeline]))
-
         result_df = df.copy()
         result_df[result_column] = self.process_series(df[text_column], pipeline)
-
         return result_df
+
+
+##################################################
+# End of NLPPipeline Class
+##################################################
+# Initialize the pipeline
+nlp = NLPPipeline(language="english")
+
+# Customize stopwords
+nlp.customize_stopwords(
+    include={
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten",
+        "'",
+        "n",
+        "'and",
+    },
+    exclude={""},
+)
+# Customize punctuation
+nlp.customize_punctuation(
+    keep={"-", ""},  # Keep hyphens and apostrophes
+    remove={
+        r"…",
+        "—",
+        "”",
+        "’",
+        "“",
+        "‘",
+        "-",
+        "\\",
+    },  # Additional characters to remove
+)
+
+# Process with default pipeline (lowercase -> tokenize -> remove punctuation -> remove stopwords)
+# df = nlp.process_dataframe(df, 'text', 'tokens')
+# df['num_tokens'] = df['tokens'].map(len)
 
 
 ####################################################################################################
