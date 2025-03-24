@@ -242,8 +242,6 @@ def check_df(df):
 # Includes lowercasing, tokenization, and stopword removal
 # Customizable stopwords with inclusions and exclusions
 
-import string
-from typing import List, Callable, Union, Set, Optional
 
 # Download necessary NLTK resources
 print("Downloading NLTK resources...")
