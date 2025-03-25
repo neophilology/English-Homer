@@ -4,6 +4,7 @@ import seaborn as sns
 # Set Seaborn style
 sns.set_style("whitegrid")
 
+print("Bard viz is on the stage!")
 # Define a named color palette dictionary
 color_palette = {
     "astroblue": "#003D59",
