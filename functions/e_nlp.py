@@ -12,6 +12,8 @@ import re
 import string
 from typing import List, Callable, Union, Set, Optional
 
+import nltk
+
 # import numpy as np
 import pandas as pd
 
@@ -19,14 +21,14 @@ from tqdm.notebook import tqdm
 
 tqdm.pandas()
 
-import nltk
-
 
 ####################################################################################################
 # Import Libraries
 ####################################################################################################
 
-print("Functions for NLP are live! use e.<function> to call them.")
+print("e enters! »----> use e.<function>")
+print()
+print('e.g., for pipeline:\n\t\t nlp = e.NLPPipeline(language="english")\n')
 
 
 ####################################################################################################
@@ -244,11 +246,11 @@ def check_df(df):
 
 
 # Download necessary NLTK resources
-print("Downloading NLTK resources...")
+# print("Downloading NLTK resources...")
 nltk.download("punkt_tab")
 nltk.download("punkt", quiet=True)
 nltk.download("stopwords", quiet=True)
-print("Download complete.")
+# print("Download complete.")
 
 
 ##############################################
