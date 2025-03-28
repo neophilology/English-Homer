@@ -228,12 +228,19 @@ def check_df(df):
     Check for missing values, columns and shape of a DataFrame.
     """
     if df.isna().sum().sum() == 0:
-        print("No missing values")
+        print("Oh, yeah! No missing values here!")
     else:
         for col in df.columns:
             if df[col].isna().sum() > 0:
                 print(f"Missing values in {col}")
-    print("\ndf columns:", df.columns, "\n\nShape:", df.shape)
+    print(
+        "\n* df columns:",
+        df.columns,
+        "\n\n* Shape:",
+        df.shape,
+        "\n\n* Total memory:",
+        df.memory_usage(deep=True).sum() / 1_000_000,
+    )
 
 
 ####################################################################################################
