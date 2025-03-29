@@ -238,7 +238,7 @@ def check_df(df):
         df.columns,
         "\n\n* Shape:",
         df.shape,
-        "\n\n* Total memory:",
+        "\n\n* Total memory in MB:",
         df.memory_usage(deep=True).sum() / 1_000_000,
     )
 
