@@ -18,7 +18,7 @@ Example:
     >>> # Create a plot with the custom style
     >>> fig, ax = plt.subplots()
     >>> ax.plot([1, 2, 3], [4, 5, 6])
-    >>> bard.save_figure(fig, "my_plot", format="pdf")
+    >>> chroma.save_figure(fig, "my_plot", format="pdf")
 
 Author: [Your Name]
 Date: March 2025
@@ -27,10 +27,33 @@ Version: 1.0.0
 
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
+
+# Default output path
+output_path_plots = "./plots/"
+
+
+def set_output_path(path):
+    """
+    Set the output path for saving figures.
+
+    Args:
+        path (str): Path where figures will be saved
+
+    Returns:
+        None
+    """
+    global output_path_plots
+    output_path_plots = path
+    os.makedirs(os.path.dirname(output_path_plots), exist_ok=True)
+    print(f"Output path set to: {output_path_plots}")
+
 
 # Set Seaborn style
 sns.set_style("whitegrid")
-print("Now there's chroma in your soma, Oma!\n")
+print("\n* Got some chroma in your soma, Oma!")
+print("\t »----> use chroma.save_figure(fig, 'my_plot')")
+print(f"Default output path: {output_path_plots}")
 
 ####################################################################################################
 # Color Palette Definition
@@ -87,7 +110,7 @@ plt.rcParams.update(danB_plotstyle)
 
 
 def save_figure(
-    fig, filename, dpi=300, format="png", bbox_inches="tight", pad_inches=0.4
+    fig, filename, dpi=400, format="png", bbox_inches="tight", pad_inches=0.4
 ):
     """
     Save the given Matplotlib figure with specific parameters.
@@ -111,10 +134,26 @@ def save_figure(
         >>> ax.plot([1, 2, 3], [4, 5, 6])
         >>> save_figure(fig, "my_plot", format="pdf")
     """
+    global output_path_plots
+
+    # Ensure filename doesn't have format extension already
+    if filename.endswith(f".{format}"):
+        filename = filename[: -len(f".{format}")]
+
+    # Create full path
+    full_path = os.path.join(output_path_plots, f"{filename}.{format}")
+
+    # Ensure the output directory exists
+    os.makedirs(output_path_plots, exist_ok=True)
+
     fig.savefig(
-        filename, dpi=dpi, format=format, bbox_inches=bbox_inches, pad_inches=pad_inches
+        full_path,
+        dpi=dpi,
+        format=format,
+        bbox_inches=bbox_inches,
+        pad_inches=pad_inches,
     )
-    print(f"Figure saved as {filename}.{format} at {dpi} DPI")
+    print(f"Figure saved as {full_path} at {dpi} DPI")
 
 
 ####################################################################################################

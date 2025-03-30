@@ -47,8 +47,8 @@ from typing import Union, List, Tuple, Optional
 # Module Introduction
 ####################################################################################################
 
-print("* OZ is behind the curtain!")
-print("\t »----> use oz.<func>")
+print("\n* OZ is behind the curtain!")
+print("\t »----> eg: oz.plot_etymology_counts(my_df, 'AT_Murray', book_range=1)")
 
 ####################################################################################################
 # Etymology Visualization Functions

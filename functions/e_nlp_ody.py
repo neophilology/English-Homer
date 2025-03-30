@@ -18,7 +18,7 @@ The library leverages NLTK for natural language processing tasks and pandas
 for data management and manipulation.
 
 Example:
-    >>> import e_odyssey_nlp_func as e
+    >>> import e_nlp_ody as e
     >>> # Initialize NLP pipeline
     >>> nlp = e.NLPPipeline(language="english")
     >>> # Process a text
@@ -51,9 +51,9 @@ tqdm.pandas()
 # Module Introduction
 ####################################################################################################
 
-print("e enters! »----> use e.<function>")
+print(f"\n* The editor is in the house!")
+print(f"\t »----> use e.<func> e.g. nlp = e.NLPPipeline(language='english')")
 print()
-print('e.g., for pipeline:\n\t\t nlp = e.NLPPipeline(language="english")\n')
 
 
 ####################################################################################################
@@ -598,3 +598,20 @@ nlp.customize_punctuation(
 # Usage example:
 # df = nlp.process_dataframe(df, 'text', 'tokens')
 # df['num_tokens'] = df['tokens'].map(len)
+####################################################################################################
+# e.g. of Visualization Functions
+####################################################################################################
+# Single book analysis
+# oz.plot_etymology_counts(my_df, "Murray", book_range=1)
+
+# Multiple books
+# oz.plot_etymology_counts(my_df, "Murray", book_range=[1, 5, 9])
+
+# Range of books
+# oz.plot_etymology_counts(my_df, "Butler", book_range=(1, 5))
+
+# Compare translators
+# oz.plot_etymology_comparison(my_df, ["Murray", "Butler", "Pope"], book_num=1)
+
+# Create heatmap visualization
+# oz.plot_etymology_heatmap(my_df, "Murray", book_range=(1, 24))
