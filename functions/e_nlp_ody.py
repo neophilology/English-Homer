@@ -255,7 +255,7 @@ def check_df(df):
         None: Prints information about missing values, columns, shape, and memory usage
     """
     if df.isna().sum().sum() == 0:
-        print("Oh, yeah! No missing values here!")
+        print("Mr righteous here has no missing values!")
     else:
         for col in df.columns:
             if df[col].isna().sum() > 0:

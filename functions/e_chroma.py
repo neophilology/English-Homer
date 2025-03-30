@@ -50,7 +50,7 @@ def set_output_path(path):
 
 
 # Set Seaborn style
-sns.set_style("whitegrid")
+# sns.set_style("whitegrid")
 print("\n* Got some chroma in your soma, Oma!")
 print("\t »----> use chroma.save_figure(fig, 'my_plot')")
 print(f"Default output path: {output_path_plots}")

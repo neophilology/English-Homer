@@ -41,7 +41,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 from typing import Union, List, Tuple, Optional
-
+import e_chroma as chroma
 
 ####################################################################################################
 # Module Introduction
@@ -366,10 +366,17 @@ def plot_etymology_heatmap(
 
 
 # Example usage:
-# Single book: plot_etymology_counts(odyssey_df, "Murray", book_range=1)
-# Multiple specific books: plot_etymology_counts(odyssey_df, "Murray", book_range=[1, 5, 9])
-# Range of books: plot_etymology_counts(odyssey_df, "Murray", book_range=(1, 5))
-#
-# Compare translators: plot_etymology_comparison(odyssey_df, ["Murray", "Butler", "Pope"], book_num=1)
-#
-# Create heatmap: plot_etymology_heatmap(odyssey_df, "Murray", book_range=(1, 24))
+# Single book analysis
+# oz.plot_etymology_counts(my_df, "Murray", book_range=1)
+
+# # Multiple books
+# oz.plot_etymology_counts(my_df, "Murray", book_range=[1, 5, 9])
+
+# # Range of books
+# oz.plot_etymology_counts(my_df, "Butler", book_range=(1, 5))
+
+# # Compare translators
+# oz.plot_etymology_comparison(my_df, ["Murray", "Butler", "Pope"], book_num=1)
+
+# # Create heatmap visualization
+# oz.plot_etymology_heatmap(my_df, "Murray", book_range=(1, 24))
