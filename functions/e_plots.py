@@ -3,31 +3,16 @@ Odyssey Plots Library
 ===============================
 
 A collection of text processing functions and utilities for analyzing literary texts,
-with specific support for processing the Homeric epic poems like The Odyssey. It was
-developed to facilitate the analysis in my term paper for the course "Data Science
-for linguists" by Dr. Johannes Dellert at the University of Tübingen.
+with specific support for processing the Homeric epic poems like The Odyssey.
 
 This module provides:
 1. Text segmentation utilities for breaking texts into books/sections
 2. DataFrame creation and manipulation functions for structured text analysis
 3. Basic text statistics (lines, sentences, words counters)
-4. An NLPPipeline class for custom text preprocessing and tokenization
-5. DataFrame quality checking utilities
-6. Flexible etymology visualization for translator comparisons
+4. Integration with e_chroma for consistent styling
+5. Flexible etymology visualization for translator comparisons
 
-The library leverages NLTK for natural language processing tasks and pandas
-for data management and manipulation.
-
-Example:
-    >>> import e_plots as oz
-    >>> # Initialize NLP pipeline
-    >>> nlp = e.NLPPipeline(language="english")
-    >>> # Process a text
-    >>> tokens = nlp.process_text("Tell me, O Muse, of the man of many devices.")
-    >>> # Plot etymology data for a translator
-    >>> oz.plot_etymology_counts(my_dataframe, "Murray", book_num=1)
-
-Author: [Your Name]
+Author: Daniel E. Barrera Rivera
 Date: March 2025
 Version: 1.0.0
 """
@@ -40,15 +25,52 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
-from typing import Union, List, Tuple, Optional
+from typing import Union, List, Tuple, Optional, Dict
+
+# Try to import e_chroma for styling consistency
+try:
+    import e_chroma as chroma
+
+    has_chroma = True
+    # Get the color values from chroma's palette
+    CHROMA_COLORS = list(chroma.color_palette.values())
+except ImportError:
+    has_chroma = False
+    CHROMA_COLORS = None
 
 
 ####################################################################################################
 # Module Introduction
 ####################################################################################################
 
-print("\n* OZ is behind the curtain!")
-print("\t »----> eg: oz.plot_etymology_counts(my_df, 'AT_Murray', book_range=1)")
+print("* OZ is behind the curtain!")
+print("\t »----> use oz.<func>")
+if has_chroma:
+    print("* Using e_chroma color palette for consistent styling")
+
+
+####################################################################################################
+# Styling Functions
+####################################################################################################
+
+
+def apply_custom_style(color_palette=None):
+    """
+    Apply custom style settings to the current plot
+
+    Parameters:
+    color_palette (list, optional): List of colors to use for plotting
+    """
+    # If we have e_chroma, use its style
+    if has_chroma:
+        plt.rcParams.update(chroma.danB_plotstyle)
+
+    # Override color cycle if a custom palette is provided
+    if color_palette:
+        plt.rcParams["axes.prop_cycle"] = plt.cycler(color=color_palette)
+    elif has_chroma:
+        plt.rcParams["axes.prop_cycle"] = plt.cycler(color=CHROMA_COLORS)
+
 
 ####################################################################################################
 # Etymology Visualization Functions
@@ -61,6 +83,7 @@ def plot_etymology_counts(
     book_range: Union[int, List[int], Tuple[int, int]] = 0,
     top_n: int = 10,
     figsize: Tuple[int, int] = (12, 8),
+    color_palette=None,
 ):
     """
     Plot the etymology label counts for a specific translator and book(s).
@@ -74,10 +97,14 @@ def plot_etymology_counts(
         - If tuple of length 2: Plot range of books, e.g. (1, 5) for books 1 through 5
     top_n (int): Number of top etymologies to display
     figsize (tuple): Figure dimensions (width, height)
+    color_palette (list, optional): Custom color palette to use
 
     Returns:
     matplotlib.figure.Figure: The created figure object
     """
+    # Apply custom styling
+    apply_custom_style(color_palette)
+
     # Filter for the specific translator
     translator_data = df[df["translator"] == translator_name]
 
@@ -182,6 +209,7 @@ def plot_etymology_comparison(
     book_num: int = 1,
     top_n: int = 10,
     figsize: Tuple[int, int] = (14, 10),
+    color_palette=None,
 ):
     """
     Compare etymology distributions between different translators for a specific book.
@@ -192,10 +220,14 @@ def plot_etymology_comparison(
     book_num (int): The book number to analyze
     top_n (int): Number of top etymologies to display
     figsize (tuple): Figure dimensions (width, height)
+    color_palette (list, optional): Custom color palette to use
 
     Returns:
     matplotlib.figure.Figure: The created figure object
     """
+    # Apply custom styling
+    apply_custom_style(color_palette)
+
     # Set up the figure
     fig, axes = plt.subplots(len(translators), 1, figsize=figsize)
 
@@ -267,6 +299,7 @@ def plot_etymology_heatmap(
     book_range: Union[Tuple[int, int], List[int]] = (1, 24),
     top_n: int = 10,
     figsize: Tuple[int, int] = (12, 10),
+    cmap: str = None,
 ):
     """
     Create a heatmap showing etymology distributions across multiple books for a translator.
@@ -279,10 +312,25 @@ def plot_etymology_heatmap(
         - If list: Specific books to include
     top_n (int): Number of top etymologies to include
     figsize (tuple): Figure dimensions (width, height)
+    cmap (str, optional): Colormap to use (e.g., "Blues", "YlOrRd")
+                         If None and e_chroma is available, uses a colormap
+                         based on e_chroma's color palette
 
     Returns:
     matplotlib.figure.Figure: The created figure object
     """
+    # Apply custom styling (don't pass color_palette since heatmap uses cmap)
+    apply_custom_style()
+
+    # Determine colormap
+    if cmap is None:
+        if has_chroma:
+            # Use the first color from chroma's palette
+            base_color = CHROMA_COLORS[0]
+            cmap = "Blues"  # Default fallback
+        else:
+            cmap = "Blues"
+
     # Filter for the translator
     translator_data = df[df["translator"] == translator_name]
 
@@ -350,7 +398,7 @@ def plot_etymology_heatmap(
         heatmap_array,
         annot=True,
         fmt="d",
-        cmap="Blues",
+        cmap=cmap,
         xticklabels=top_ety_labels,
         yticklabels=book_labels,
         ax=ax,
@@ -365,18 +413,42 @@ def plot_etymology_heatmap(
     return fig
 
 
+def save_with_chroma(fig, filename, **kwargs):
+    """
+    Save a figure using e_chroma.save_figure if available, otherwise use plt.savefig
+
+    Parameters:
+    fig (matplotlib.figure.Figure): The figure to save
+    filename (str): The filename to save to (without extension)
+    **kwargs: Additional arguments to pass to the save function
+    """
+    if has_chroma:
+        # Use chroma's save_figure function
+        chroma.save_figure(fig, filename, **kwargs)
+    else:
+        # Fall back to standard matplotlib savefig
+        format = kwargs.get("format", "png")
+        dpi = kwargs.get("dpi", 300)
+        bbox_inches = kwargs.get("bbox_inches", "tight")
+        pad_inches = kwargs.get("pad_inches", 0.4)
+
+        fig.savefig(
+            f"{filename}.{format}",
+            format=format,
+            dpi=dpi,
+            bbox_inches=bbox_inches,
+            pad_inches=pad_inches,
+        )
+        print(f"Figure saved as {filename}.{format}")
+
+
 # Example usage:
-# Single book analysis
-# oz.plot_etymology_counts(my_df, "Murray", book_range=1)
-
-# # Multiple books
-# oz.plot_etymology_counts(my_df, "Murray", book_range=[1, 5, 9])
-
-# # Range of books
-# oz.plot_etymology_counts(my_df, "Butler", book_range=(1, 5))
-
-# # Compare translators
-# oz.plot_etymology_comparison(my_df, ["Murray", "Butler", "Pope"], book_num=1)
-
-# # Create heatmap visualization
-# oz.plot_etymology_heatmap(my_df, "Murray", book_range=(1, 24))
+# Single book: plot_etymology_counts(odyssey_df, "Murray", book_range=1)
+# Multiple specific books: plot_etymology_counts(odyssey_df, "Murray", book_range=[1, 5, 9])
+# Range of books: plot_etymology_counts(odyssey_df, "Murray", book_range=(1, 5))
+#
+# Compare translators: plot_etymology_comparison(odyssey_df, ["Murray", "Butler", "Pope"], book_num=1)
+#
+# Create heatmap: plot_etymology_heatmap(odyssey_df, "Murray", book_range=(1, 24))
+#
+# Save with chroma: save_with_chroma(fig, "my_etymology_plot", format="pdf")
