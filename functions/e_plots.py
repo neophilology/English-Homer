@@ -12,7 +12,7 @@ This module provides:
 4. Integration with e_chroma for consistent styling
 5. Flexible etymology visualization for translator comparisons
 
-Author: Daniel E. Barrera Rivera
+Author: Daniel E. Barrera-Rivera
 Date: March 2025
 Version: 1.0.0
 """
@@ -43,10 +43,10 @@ except ImportError:
 # Module Introduction
 ####################################################################################################
 
-print("* OZ is behind the curtain!")
+print("*\n OZ is behind the curtain!")
 print("\t »----> use oz.<func>")
 if has_chroma:
-    print("* Using e_chroma color palette for consistent styling")
+    print("\t »----> also, oz goes chroma (for styling)!")
 
 
 ####################################################################################################

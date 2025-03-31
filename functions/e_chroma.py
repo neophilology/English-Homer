@@ -20,7 +20,7 @@ Example:
     >>> ax.plot([1, 2, 3], [4, 5, 6])
     >>> chroma.save_figure(fig, "my_plot", format="pdf")
 
-Author: [Your Name]
+Author: Daniel E. Barrera-Rivera
 Date: March 2025
 Version: 1.0.0
 """
@@ -30,7 +30,7 @@ import seaborn as sns
 import os
 
 # Default output path
-output_path_plots = "./plots/"
+output_path_plots = "./Homer_xplots/"
 
 
 def set_output_path(path):

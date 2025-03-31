@@ -24,7 +24,7 @@ Example:
     >>> # Process a text
     >>> tokens = nlp.process_text("Tell me, O Muse, of the man of many devices.")
 
-Author: [Your Name]
+Author: Daniel E. Barrera-Rivera
 Date: March 2025
 Version: 1.0.0
 """
