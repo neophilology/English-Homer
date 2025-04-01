@@ -3,6 +3,7 @@
 # This script generates a markdown file with links to all files in the project directory.
 # It skips hidden files and directories, and excludes directories based on patterns.
 # The generated links are in the format `[file_path](./file_path) - Add description here`.
+
 # Updating tree: tree -I "node_modules|.git|.github" > project_structure.txt
 import os
 import fnmatch

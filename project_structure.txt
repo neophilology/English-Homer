@@ -1,6 +1,59 @@
 .
 ├── EDA_by_Author
+│   ├── AT_Murray_EDA
+│   │   └── plots
+│   │       ├── AT_Murray-Boxplots_Sentences_Words_Lines.png
+│   │       ├── AT_Murray-Character_Frequency.png
+│   │       ├── AT_Murray-Character_Frequency_Heatmap.png
+│   │       ├── AT_Murray-KDE_Lines_Sentences_Words.png
+│   │       ├── AT_Murray-Keyword_Frequency.png
+│   │       ├── AT_Murray-Keyword_Frequency_Heatmap.png
+│   │       ├── AT_Murray-Keyword_Frequency_Heatmap_blues.png
+│   │       ├── AT_Murray-Odysseus_and_Penelope_lineplot.png
+│   │       ├── AT_Murray-Scatter_Words_Lines.png
+│   │       ├── AT_Murray-TFIDF_bigrams.png
+│   │       ├── AT_Murray-TF_TFIDF_wordcloud_Telemachy.png
+│   │       ├── AT_Murray-Top_Words.png
+│   │       └── AT_Murray-Trends_Lines_Words_Sentences.png
+│   ├── EDA_AT_Murray.ipynb
+│   ├── EDA_Fitzgerald
+│   │   └── EDA_Fitzgerald.ipynb
+│   ├── EDA_Lattimore.ipynb
+│   ├── EDA_TEMPLATE.ipynb
+│   ├── Fagles_EDA
+│   │   ├── EDA_Fagles.ipynb
+│   │   └── plots
+│   │       ├── Fagles-Boxplots_Sentences_Words_Lines.png
+│   │       ├── Fagles-Character_Frequency.png
+│   │       ├── Fagles-Character_Frequency_Heatmap.png
+│   │       ├── Fagles-KDE_Lines_Sentences_Words.png
+│   │       ├── Fagles-Keyword_Frequency.png
+│   │       ├── Fagles-Keyword_Frequency_Heatmap.png
+│   │       ├── Fagles-Keyword_Frequency_Heatmap_blues.png
+│   │       ├── Fagles-Odysseus_and_Penelope_lineplot.png
+│   │       ├── Fagles-Scatter_Words_Lines.png
+│   │       ├── Fagles-TFIDF_bigrams.png
+│   │       ├── Fagles-TF_TFIDF_wordcloud_B1-2.png
+│   │       ├── Fagles-TF_TFIDF_wordcloud_Telemachy.png
+│   │       ├── Fagles-Top_Words.png
+│   │       └── Fagles-Trends_Lines_Words_Sentences.png
+│   ├── Fitzgerald_EDA
+│   │   └── plots
+│   │       ├── Fitzgerald-Boxplots_Sentences_Words_Lines.png
+│   │       ├── Fitzgerald-Character_Frequency.png
+│   │       ├── Fitzgerald-Character_Frequency_Heatmap.png
+│   │       ├── Fitzgerald-KDE_Lines_Sentences_Words.png
+│   │       ├── Fitzgerald-Keyword_Frequency.png
+│   │       ├── Fitzgerald-Keyword_Frequency_Heatmap.png
+│   │       ├── Fitzgerald-Keyword_Frequency_Heatmap_blues.png
+│   │       ├── Fitzgerald-Odysseus_and_Penelope_lineplot.png
+│   │       ├── Fitzgerald-Scatter_Words_Lines.png
+│   │       ├── Fitzgerald-TFIDF_bigrams.png
+│   │       ├── Fitzgerald-TF_TFIDF_wordcloud_Telemachy.png
+│   │       ├── Fitzgerald-Top_Words.png
+│   │       └── Fitzgerald-Trends_Lines_Words_Sentences.png
 │   ├── Green_EDA
+│   │   ├── EDA_TEMPLATE.ipynb
 │   │   ├── Green_EDA.ipynb
 │   │   ├── odyssey_characters_heatmap.png
 │   │   ├── odyssey_keyword_heatmap.png
@@ -15,6 +68,21 @@
 │   │       ├── Green-TF_TFIDF_wordcloud_B1-2.png
 │   │       ├── Green-Top_Words.png
 │   │       └── Green-Trends_Lines_Words_Sentences.png
+│   ├── Lattimore_EDA
+│   │   └── plots
+│   │       ├── Lattimore-Boxplots_Sentences_Words_Lines.png
+│   │       ├── Lattimore-Character_Frequency.png
+│   │       ├── Lattimore-Character_Frequency_Heatmap.png
+│   │       ├── Lattimore-KDE_Lines_Sentences_Words.png
+│   │       ├── Lattimore-Keyword_Frequency.png
+│   │       ├── Lattimore-Keyword_Frequency_Heatmap.png
+│   │       ├── Lattimore-Keyword_Frequency_Heatmap_blues.png
+│   │       ├── Lattimore-Odysseus_and_Penelope_lineplot.png
+│   │       ├── Lattimore-Scatter_Words_Lines.png
+│   │       ├── Lattimore-TFIDF_bigrams.png
+│   │       ├── Lattimore-TF_TFIDF_wordcloud_Telemachy.png
+│   │       ├── Lattimore-Top_Words.png
+│   │       └── Lattimore-Trends_Lines_Words_Sentences.png
 │   └── Wilson_EDA
 │       ├── Wilson_EDA.ipynb
 │       └── plots
@@ -28,6 +96,19 @@
 │           ├── Wilson-TF_TFIDF_wordcloud_B1-2.png
 │           ├── Wilson-Top_Words.png
 │           └── Wilson-Trends_Lines_Words_Sentences.png
+├── Etymology_Six_Modern
+│   ├── Etymology_Six_Modern
+│   │   └── Etymology_Six_Modern_B_plots
+│   │       └── ety_comparison_Murray_Butler_Pope_Book_1.png
+│   ├── Etymology_Six_Modern_B.ipynb
+│   ├── Etymology_Six_Modern_plots
+│   │   └── author_color_mapping-Etymology_Six_Modern.png
+│   ├── assets
+│   │   ├── ety_CLI_goddess.png
+│   │   └── ety_CLI_warrior.png
+│   └── test.png
+├── Etymology_Six_Modern.ipynb
+├── Git
 ├── LICENSE
 ├── MVP_Green-Wilson
 │   ├── MVP_Lexical.ipynb
@@ -65,23 +146,102 @@
 │   └── tf-idf_function.pdf
 ├── README.md
 ├── ResearchDesign.md
+├── Six_Modern_TTR
+│   ├── Six_Modern_TTR.ipynb
+│   ├── Six_Modern_TTR.pdf
+│   └── Six_Modern_TTR_plots
+│       ├── author_color_mapping-Six_Modern_TTR.png
+│       ├── diff_words_tokens-Six_Modern_TTR.png
+│       ├── moving_average_ttr-Six_Modern_TTR.png
+│       ├── token_word_ratio-Six_Modern_TTR.png
+│       └── words_tokens-Six_Modern_TTR.png
+├── Six_XXth_Lexical
+│   ├── Six_XX_GRUFF_TTR.html
+│   ├── Six_XX_GRUFF_TTR.ipynb
+│   ├── Six_XX_GRUFF_TTR.pdf
+│   ├── Six_XX_TTR.ipynb
+│   ├── Six_XXth_Lexical.ipynb
+│   ├── Six_XXth_Lexical_plots
+│   │   ├── Six_XX-TFIDF_heatmap(AT_Murray–30words).png
+│   │   ├── Six_XX-TFIDF_heatmap(Fagles–30words).png
+│   │   ├── Six_XX-TFIDF_heatmap(Fitzgerald–30words).png
+│   │   ├── Six_XX-TFIDF_heatmap(Green–30words).png
+│   │   ├── Six_XX-TFIDF_heatmap(Lattimore–30words).png
+│   │   └── Six_XX-TFIDF_heatmap(Wilson–30words).png
+│   ├── Six_XXth_TTR
+│   ├── Six_XXth_TTR_plots
+│   │   ├── diff_words_tokens-Six_XXth_TTR.png
+│   │   └── words_tokens-Six_XXth_TTR.png
+│   └── output_path
 ├── XML-schema-corpus.md
+├── Zipf_Six_Modern
+│   ├── Zipf_Six_Modern.ipynb
+│   ├── Zipf_Six_Modern_SKIMMED.ipynb
+│   └── Zipf_Six_Modern_plots
+│       └── author_color_mapping-Zipf_Six_Modern.png
 ├── __pycache__
+│   ├── bard_visualization.cpython-311.pyc
 │   └── visualization_utils.cpython-311.pyc
+├── add
 ├── assets
 │   └── images
 │       ├── Aga_mask.png
 │       ├── Dan_BW02.png
+│       ├── Origins_of_English_PieChart_2D.svg
 │       └── neoPHilology-BANNER-wLogo.png
+├── bard_visualization.py
 ├── cleaners_by_author
+│   ├── clean_Fagles.ipynb
+│   ├── clean_Fitzgerald.ipynb
+│   ├── clean_Fitzgerald_FAILED.ipynb
+│   ├── clean_Lattimore.ipynb
+│   ├── clean_Murray.ipynb
+│   ├── clean_TEMPLETE.ipynb
 │   ├── clean_green.ipynb
 │   └── clean_wilson.ipynb
 ├── data.md
 ├── dataframers_by_author
+│   ├── AT_Murray_DFed
+│   │   └── plots
+│   │       ├── AT_Murray-lines_freq.png
+│   │       ├── AT_Murray-sentence_freq.png
+│   │       └── AT_Murray-words_freq_bB.png
+│   ├── DFing_six_xx
+│   │   ├── DFing_AT_Murray.ipynb
+│   │   ├── DFing_Fagles.ipynb
+│   │   ├── DFing_Fitzgerald.ipynb
+│   │   ├── DFing_Green.ipynb
+│   │   ├── DFing_Lattimore.ipynb
+│   │   ├── DFing_Wilson.ipynb
+│   │   └── plots
+│   ├── Fagles_DFed
+│   │   └── plots
+│   ├── Fitzgerald_DFed
+│   │   └── plots
+│   │       ├── Fitzgerald-lines_freq.png
+│   │       ├── Fitzgerald-sentence_freq.png
+│   │       └── Fitzgerald-words_freq_bB.png
+│   ├── Green_DFed
+│   │   └── plots
+│   ├── Lattimore_DFed
+│   │   ├── DFing_GRUFF_Lattimore.ipynb
+│   │   └── plots
+│   │       ├── Lattimore-lines_freq.png
+│   │       ├── Lattimore-sentence_freq.png
+│   │       └── Lattimore-words_freq_bB.png
+│   ├── dataframer_AT_Murray.ipynb
+│   ├── dataframer_Fagles.ipynb
+│   ├── dataframer_Fitzgerald.ipynb
 │   ├── dataframer_Green.ipynb
+│   ├── dataframer_Lattimore.ipynb
+│   ├── dataframer_TEMPLATE.ipynb
 │   ├── dataframer_Wilson.ipynb
 │   ├── lines_frequency_by_book.png
 │   ├── plots
+│   │   ├── Fagles-lines_freq.png
+│   │   ├── Fagles-sentence_freq.png
+│   │   ├── Fagles-words_freq_bB.png
+│   │   ├── Fitzgerald-sentence_freq.png
 │   │   ├── Green-lines_freq.png
 │   │   ├── Green-sentence_freq.png
 │   │   ├── Green-words_freq_bB.png
@@ -90,20 +250,45 @@
 │   │   └── Wilson-words_frequency_bB.png
 │   ├── sentence_frequency_by_book.png
 │   └── words_frequency_by_book.png
+├── e_functions.py
 ├── environment.yml
+├── epub_pdf_to_txt
+│   └── pdf_to_txt.ipynb
 ├── file_links.md
 ├── functions
+│   ├── __pycache__
+│   │   ├── e_chroma.cpython-311.pyc
+│   │   ├── e_nlp.cpython-311.pyc
+│   │   ├── e_nlp_ody.cpython-311.pyc
+│   │   ├── e_nlp_pipeline.cpython-311.pyc
+│   │   ├── e_odyssey_nlp_func.cpython-311.pyc
+│   │   └── e_plots.cpython-311.pyc
+│   ├── e_chroma.py
+│   ├── e_nlp.py
+│   ├── e_nlp_ody.py
+│   ├── e_nlp_pipeline.py
+│   ├── e_plots.py
 │   └── tokenizer.py
 ├── generate_links.py
 ├── growth_journal.md
 ├── index.md
 ├── normalizers_by_author
+│   ├── normalizer_AT_Murray.ipynb
+│   ├── normalizer_Fagles.ipynb
+│   ├── normalizer_Fitzgerald.ipynb
 │   ├── normalizer_Green.ipynb
+│   ├── normalizer_Lattimore.ipynb
+│   ├── normalizer_TEMPLATE.ipynb
 │   └── normalizer_Wilson.ipynb
 ├── project_structure.txt
+├── random_functions.py
 ├── research-questions.md
 ├── text_cleaning.py
 ├── texter_epub_bs4.ipynb
+├── tfidf_Six_Mo
+│   ├── tfidf_Six_Mo
+│   │   └── tfidf_Six_Mo_plots
+│   └── tfidf_Six_Mo.ipynb
 └── visualization_utils.py
 
-17 directories, 90 files
+57 directories, 235 files

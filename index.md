@@ -14,12 +14,24 @@ This research begins by focusing on translation. It traces the evolution of the 
 
 By combining data science with traditional philology and cultural studies, the patterns that have shaped our understanding of Homer's world reflect how we have shaped Homer in return.
 
+Here is the project structure (57 directories, 235 files). 
+
+
 <img src="./assets/images/Aga_mask.png" alt="Agamemnon Gold Mask" width="600"/>
 
 ## Project Navigation
 
-### :eyes: Dr Dellert, please review my -> MVP 
+### **Experiments** (Work-In-Progress)
 
+– [**Type-Token Ratio** Six_XXth_Lexical/Six_XX_GRUFF_TTR.ipynb](./Six_XXth_Lexical/Six_XX_GRUFF_TTR.ipynb)
+– [**Zipf's Law** Zipf_Six_Modern/Zipf_Six_Modern_SKIMMED.ipynb](./Zipf_Six_Modern/Zipf_Six_Modern_SKIMMED.ipynb)
+– [**Token Frequency-Inverse Document Frequency (TFIDF)** tfidf_Six_Mo/tfidf_Six_Mo.ipynb](./tfidf_Six_Mo/tfidf_Six_Mo.ipynb) 
+– [**Etymology A** (preliminary) - Etymology_Six_Modern.ipynb](./Etymology_Six_Modern.ipynb)
+– [**Etymology B** - Etymology_Six_Modern/Etymology_Six_Modern_B.ipynb](./Etymology_Six_Modern/Etymology_Six_Modern_B.ipynb)
+
+
+
+#### Early Experiments 
 Here is the minimum viable product (MVP) to try out if the research approach works:
 
 - [**The Notebook!** - MVP Lexical Analysis](https://nbviewer.org/github/neophilology/English-Homer/blob/main/MVP_Green-Wilson/MVP_Lexical.ipynb)
@@ -30,7 +42,9 @@ It focuses on statistical analysis and lexical diversity of the best contemporar
 
 **NB:** The texts are not distributed or collected here in any manner.
 
-### Here Comes the Cleaners
+### The Exploratory Notebooks WIll be Here
+
+
 
 In here you can find notebooks for preprocessing, like pruning the text and normalizing it:
 
@@ -47,6 +61,10 @@ In here you can find notebooks for preprocessing, like pruning the text and norm
 - [Corpus Schema](./XML-schema-corpus.md) – Describes the structure of selected translations
 
 ## Latest Updates
+- **April 1st, 2025**: Four experiments for six modern Odysseys: 
+    * odysseys = ["AT_Murray", "Fitzgerald", "Lattimore", "Fagles", "Wilson", "Green"]
+    * experiments = ["TTR", "Zipf", "TFIDF", Etymology"]
+    *plus:* Lots of plots, EDA per translator, carpel tunnel from the mouse and a hunch on my back.
 
 - **March 16th, 2025**: Project is live!
 
