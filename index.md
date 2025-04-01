@@ -14,7 +14,7 @@ This research begins by focusing on translation. It traces the evolution of the 
 
 By combining data science with traditional philology and cultural studies, the patterns that have shaped our understanding of Homer's world reflect how we have shaped Homer in return.
 
-Here is the project structure (57 directories, 235 files). 
+Here is the project structure[project_structure.txt](./project_structure.txt) (57 directories, 235 files). 
 
 
 <img src="./assets/images/Aga_mask.png" alt="Agamemnon Gold Mask" width="600"/>
@@ -23,13 +23,13 @@ Here is the project structure (57 directories, 235 files).
 
 ### **Experiments** (Work-In-Progress)
 
-– [**Type-Token Ratio** Six_XXth_Lexical/Six_XX_GRUFF_TTR.ipynb](./Six_XXth_Lexical/Six_XX_GRUFF_TTR.ipynb)
-– [**Zipf's Law** Zipf_Six_Modern/Zipf_Six_Modern_SKIMMED.ipynb](./Zipf_Six_Modern/Zipf_Six_Modern_SKIMMED.ipynb)
-– [**Token Frequency-Inverse Document Frequency (TFIDF)** tfidf_Six_Mo/tfidf_Six_Mo.ipynb](./tfidf_Six_Mo/tfidf_Six_Mo.ipynb) 
-– [**Etymology A** (preliminary) - Etymology_Six_Modern.ipynb](./Etymology_Six_Modern.ipynb)
-– [**Etymology B** - Etymology_Six_Modern/Etymology_Six_Modern_B.ipynb](./Etymology_Six_Modern/Etymology_Six_Modern_B.ipynb)
+Here is the first batch of dedicated experiments with statistical tests for my selection of six modern translators: "AT_Murray", "Fitzgerald", "Lattimore", "Fagles", "Wilson", "Green". 
 
-
+– [**Type-Token Ratio**](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Six_XXth_Lexical/Six_XX_GRUFF_TTR.ipynb)
+– [**Zipf's Law**](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Zipf_Six_Modern/Zipf_Six_Modern_SKIMMED.ipynb)
+– [**Token Frequency-Inverse Document Frequency (TFIDF)**](https://nbviewer.org/github/neophilology/English-Homer/blob/main/tfidf_Six_Mo/tfidf_Six_Mo.ipynb)
+– [**Etymology A** (preliminary)](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Etymology_Six_Modern.ipynb)
+– [**Etymology B**](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Etymology_Six_Modern/Etymology_Six_Modern_B.ipynb)
 
 #### Early Experiments 
 Here is the minimum viable product (MVP) to try out if the research approach works:
