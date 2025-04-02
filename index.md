@@ -25,7 +25,7 @@ Here is the project's tree layout: [project_structure.txt](./project_structure.t
 
 Here is the first batch of dedicated experiments with statistical tests for my selection of six modern translators: "AT_Murray", "Fitzgerald", "Lattimore", "Fagles", "Wilson", "Green". 
 
-– [**Type-Token Ratio**](https://nbviewer.org/github/neophilology/Users/debr/English-Homer/Lex_Six_Mo-03_31_25/TTR_Six_Mo-03_31_25.ipynb)
+– [**Type-Token Ratio**](https://nbviewer.org/github/neophilology/English-Homer/Lex_Six_Mo-03_31_25/TTR_Six_Mo-03_31_25.ipynb)
 
 – [**Zipf's Law**](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Zipf_Six_Modern/Zipf_Six_Modern_SKIMMED.ipynb)
 
