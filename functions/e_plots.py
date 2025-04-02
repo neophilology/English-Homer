@@ -43,7 +43,7 @@ except ImportError:
 # Module Introduction
 ####################################################################################################
 
-print("*\n OZ is behind the curtain!")
+print("\n* OZ is behind the curtain!")
 print("\t »----> use oz.<func>")
 if has_chroma:
     print("\t »----> also, oz goes chroma (for styling)!")
