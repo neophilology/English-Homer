@@ -79,7 +79,7 @@ color_palette = {
 
 # Custom Matplotlib settings using the dictionary
 danB_plotstyle = {
-    "figure.figsize": (12, 7),
+    "figure.figsize": (16, 9),
     "axes.labelsize": "large",
     "axes.titlesize": "large",
     "axes.titleweight": "bold",
