@@ -27,7 +27,7 @@ Here is the first batch of dedicated experiments with statistical tests for my s
 
 – [**Type-Token Ratio**](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lex_Six_Mo-03_31_25/TTR_Six_Mo-03_31_25.ipynb)
 
-– [**Zipf's Law**](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Zipf_Six_Modern/Zipf_Six_Modern_SKIMMED.ipynb)
+– [**Zipf's Law**](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lex_Six_Mo-03_31_25/Zipf_Six_Mo-03_31_25.ipynb)
 
 – [**Token Frequency-Inverse Document Frequency (TFIDF)**](https://nbviewer.org/github/neophilology/English-Homer/blob/main/tfidf_Six_Mo/tfidf_Six_Mo.ipynb)
 
