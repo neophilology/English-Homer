@@ -25,7 +25,7 @@ import pandas as pd
 # Module Introduction
 ####################################################################################################
 
-print("\n* Pan is taking over")
+print("\n*Has Pan taken over?")
 print("\t »----> use pan.<func>")
 
 ####################################################################################################
@@ -42,7 +42,8 @@ def reset():
     pd.set_option("display.max_columns", None)
     pd.set_option("display.width", 1000)
     pd.set_option("colheader_justify", "left")
-    print("✓ Pandas display reset to pandisplay defaults")
+    print("✓ Yes, Pandas display set to e_pandisplay defaults!")
+    print("\t »----> use pan.<func>")
 
 
 def wide():
