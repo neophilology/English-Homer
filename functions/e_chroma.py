@@ -29,6 +29,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
+from matplotlib.colors import LinearSegmentedColormap
+
 # Default output path
 output_path_plots = "./Homer_xplots/"
 
