@@ -24,11 +24,11 @@ Presently, the project is in the lexical analysis stage almost completed. It is 
 
 - **Lexical A** includes the TTR, Zipf's Law, and TF-IDF analysis:  
 
-    * [Lexical/lexical_A02.ipynb](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lexical/lexical_A02.pdf)
+    * [Lexical/lexical_A02.ipynb](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lexical/lexical_A02.ipynb)
 
-- **Lexical B** is all about etymologies:   
-
-    * [Lexical/lexical_B01.ipynb](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lexical/lexical_B01.ipynb)
+- **Lexical B** is all about etymologies:    
+ 
+    * [Lexical/lexical_B01.ipynb](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lexical/lexical_B01.ipynb)   
 
 ### Notes on the project
 
