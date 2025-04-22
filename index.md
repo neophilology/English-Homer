@@ -22,9 +22,12 @@ Here is the project's tree layout: [project_structure.txt](./project_structure.t
 
 Presently, the project is in the lexical analysis stage almost completed. It is distributed in two notebooks.  
 
-- **Lexical A** includes the TTR, Zipf's Law, and TF-IDF analysis:
+- **Lexical A** includes the TTR, Zipf's Law, and TF-IDF analysis:  
+
     * [Lexical/lexical_A02.ipynb](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lexical/lexical_A02.pdf)
-- **Lexical B** is all about etymologies:  
+
+- **Lexical B** is all about etymologies:   
+
     * [Lexical/lexical_B01.ipynb](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lexical/lexical_B01.ipynb)
 
 ### Notes on the project
