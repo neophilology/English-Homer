@@ -58,5 +58,34 @@ Woolf's TTR data is NOT normally distributed.
 
 ### TTR: One-way ANOVA
 
+There are statistically **significant differences in TTR** among the translators.
 F-statistic: 18.6346, P-value: 0.0000
-There are statistically significant differences in TTR among the translators.
+
+
+### TTR: Pairwise t-tests with Bonferroni correction
+
+**Where the difference is SIGNIFICANT:**
+
+AT_Murray vs Fitzgerald: Diff = -7.5148, p = 0.0000 - SIGNIFICANT
+AT_Murray vs Fagles: Diff = -4.5204, p = 0.0007 - SIGNIFICANT
+AT_Murray vs Wilson: Diff = -4.5955, p = 0.0003 - SIGNIFICANT
+AT_Murray vs Woolf: Diff = -7.2653, p = 0.0010 - SIGNIFICANT
+Fitzgerald vs Lattimore: Diff = 10.1503, p = 0.0000 - SIGNIFICANT
+Fitzgerald vs Green: Diff = 4.5391, p = 0.0014 - SIGNIFICANT
+Lattimore vs Fagles: Diff = -7.1559, p = 0.0000 - SIGNIFICANT
+Lattimore vs Wilson: Diff = -7.2310, p = 0.0000 - SIGNIFICANT
+Lattimore vs Green: Diff = -5.6112, p = 0.0000 - SIGNIFICANT
+Lattimore vs Woolf: Diff = -9.9008, p = 0.0000 - SIGNIFICANT
+
+**Where the difference is NOT significant:**
+AT_Murray vs Lattimore: Diff = 2.6355, p = 0.2486 - NOT significant
+AT_Murray vs Green: Diff = -2.9757, p = 0.0865 - NOT significant
+Fitzgerald vs Fagles: Diff = 2.9944, p = 0.1204 - NOT significant
+Fitzgerald vs Wilson: Diff = 2.9193, p = 0.1190 - NOT significant
+Fitzgerald vs Woolf: Diff = 0.2495, p = 1.0000 - NOT significant
+Fagles vs Wilson: Diff = -0.0751, p = 1.0000 - NOT significant
+Fagles vs Green: Diff = 1.5447, p = 1.0000 - NOT significant
+Fagles vs Woolf: Diff = -2.7449, p = 1.0000 - NOT significant
+Wilson vs Green: Diff = 1.6198, p = 1.0000 - NOT significant
+Wilson vs Woolf: Diff = -2.6698, p = 1.0000 - NOT significant
+Green vs Woolf: Diff = -4.2896, p = 0.2428 - NOT significant
