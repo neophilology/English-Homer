@@ -21,6 +21,26 @@ Here is the project's tree layout: [project_structure.txt](./project_structure.t
 
 ## Project Navigation
 
+### **Dr. Dellert here are the Latest Notebooks**
+
+Presently, the project is in the lexical analysis stage almost completed. It is distributed in two notebooks.  
+
+- **Lexical A** includes the TTR, Zipf's Law, and TF-IDF analysis
+    * [Lexical/lexical_A02.pdf](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lexical/lexical_A02.pdf)
+- **Lexical B** is all about etymologies.
+    *
+    https://nbviewer.org/github/neophilology/English-Homer/blob/main
+
+The results are not exactly what I expected to have so far but is not for lack of trying and effort. It is because it is a long project, I'm unexperienced, and the trial and error nature of a NLP experiment involves. However, I think the state of the research, as a final term project, is done: it is ample but focused and in a well enough shape to be read and graded by an expert (your feedback will be like rain on a dry field even if harsh and drenching).
+
+Some caveats:
+- I struggle the most with the statistical testing and inferences, and wasted lots of time on fancy vizualizations. 
+- All of the pre-process can be consulted in the GitHub repo. I didn't include the cleaning of texts in the final notebooks as every text demanded different preprossessing
+
+
+
+
+
 ### **Experiments** (Work-In-Progress)
 
 Here is the first batch of dedicated experiments with statistical tests for my selection of six modern translators: "AT_Murray", "Fitzgerald", "Lattimore", "Fagles", "Wilson", "Green". 
