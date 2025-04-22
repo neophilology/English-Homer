@@ -6,42 +6,58 @@
 
 ## Exploring the Homeric Rhizome Across English Translations of the Odyssey
 
-Welcome to the digital home of "Homer's Living Network," a digital humanities project analyzing how Homer's Odyssey has been reimagined across centuries, becoming part of the English literary tradition.
+Welcome to the digital home of "Homer's Living Network," a digital humanities project analyzing how Homer's Odyssey has been reimagined across centuries in the English literary tradition.
 
 ## Project Overview
 
-This research begins by focusing on translation. It traces the evolution of the Homeric networks from the first English translation in 1615 to contemporary renderings, using computational methods to reveal how translators have transformed the ancient epic for English-speaking audiences.
-
-By combining data science with traditional philology and cultural studies, the patterns that have shaped our understanding of Homer's world reflect how we have shaped Homer in return.
-
-Here is the project's tree layout: [project_structure.txt](./project_structure.txt) (57 directories, 235 files). 
-
+This research begins by focusing on translation. It traces the evolution of the Homeric networks from the first English translation in 1615 to contemporary renderings, using computational methods to reveal how translators have transformed the ancient epic for English-speaking readers.
 
 <img src="./assets/images/Aga_mask.png" alt="Agamemnon Gold Mask" width="600"/>
 
 ## Project Navigation
 
-### **Dr. Dellert here are the Latest Notebooks**
+Here is the project's tree layout: [project_structure.txt](./project_structure.txt) (wonderers beware: there are 76 directories, 339 files). 
+
+### **Dr. Dellert, here are the Latest Notebooks**
 
 Presently, the project is in the lexical analysis stage almost completed. It is distributed in two notebooks.  
 
 - **Lexical A** includes the TTR, Zipf's Law, and TF-IDF analysis
     * [Lexical/lexical_A02.pdf](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lexical/lexical_A02.pdf)
 - **Lexical B** is all about etymologies.
-    *
-    https://nbviewer.org/github/neophilology/English-Homer/blob/main
+    *[Lexical/lexical_B01.ipynb](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lexical/lexical_B01.ipynb)
 
-The results are not exactly what I expected to have so far but is not for lack of trying and effort. It is because it is a long project, I'm unexperienced, and the trial and error nature of a NLP experiment involves. However, I think the state of the research, as a final term project, is done: it is ample but focused and in a well enough shape to be read and graded by an expert (your feedback will be like rain on a dry field even if harsh and drenching).
+### Notes on the project
 
-Some caveats:
-- I struggle the most with the statistical testing and inferences, and wasted lots of time on fancy vizualizations. 
-- All of the pre-process can be consulted in the GitHub repo. I didn't include the cleaning of texts in the final notebooks as every text demanded different preprossessing
+The results are not exactly what I expected to have so far but is not for lack of trying and effort—I'm guessing sometimes you have to argue the case with no other smoking gun than p-values. The lack of univocal, "in your face" results likely stems from:
+
+- The long-term nature of this project
+- My inexperience in the field
+- The trial-and-error nature of NLP experiments involving:
+  - Learning to deal with setbacks
+  - Redesigning approaches
+  - Pivoting when necessary
+  - Persevering through challenges
+
+However, I believe the state of the research, as a final term project, is at a presentable level: it is ample but focused and in well enough shape to be read and graded by a (patient) expert. Having said that, even if harsh and drenching, your feedback will be like rain on a dry field—the rain is always unprejudiced and welcomed here.
+
+#### Some Caveats
+
+- **Statistical challenges**: I struggled most with statistical testing and inferences (and got lost more times than I dare to tell)
+- **Visualization focus**: I "wasted" lots of time on fancy visualizations (though visualization is a task that I enjoyed)
+- **Pre-processing**: All pre-processing can be consulted in the GitHub repo. I didn't include the cleaning of texts in the final notebooks as every text demanded different preprocessing
+- **Length constraints**: In consideration with your time, I have edited a lot of material but still came up short with notebooks that are too long
+  - Some PDF exports already made for 80 pages per notebook
+  - Given this and the fact that most of the project is still in its infancy, I didn't write a full report of the results
+  - Discussion of results is included within the notebooks
+  - If needed for clarification, proper scientific research style, or other criteria, I can write a comprehensive report
 
 
 
 
 
-### **Experiments** (Work-In-Progress)
+
+### **OLD Experiments** (Work-In-Progress)
 
 Here is the first batch of dedicated experiments with statistical tests for my selection of six modern translators: "AT_Murray", "Fitzgerald", "Lattimore", "Fagles", "Wilson", "Green". 
 
