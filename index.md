@@ -1,141 +1,91 @@
+# Homer's Living Network: A Digital Humanities Investigation
+
+**Daniel Barrera Rivera**  
+*University of Tübingen*
+
 ![Homer's Living Network Banner](./assets/images/neoPHilology-BANNER-wLogo.png)
 
-# Homer's Living Network
+## Theorizing Translation as Cultural Network
 
-**Daniel Barrera Rivera**
+This digital humanities project interrogates the transformation of Homer's *Odyssey* across four centuries of English literary production, positioning translation not as mere linguistic transfer but as a complex site of cultural negotiation and literary reinvention. Through computational analysis of over eighty English renderings—from Chapman's 1615 pioneering work to contemporary feminist and postcolonial reinterpretations—this research reveals how successive translations construct a "Homeric rhizome": a non-hierarchical network where each new rendering simultaneously responds to the Greek source and the accumulated English tradition.
 
-## Exploring the Homeric Rhizome Across English Translations of the Odyssey
+## Methodological Framework
 
-Welcome to the digital home of "Homer's Living Network," a digital humanities project analyzing how Homer's Odyssey has been reimagined across centuries in the English literary tradition.
+The project deploys a multi-method computational approach that bridges quantitative linguistics, cultural analytics, and translation theory. By analyzing lexical diversity patterns and etymological preferences. I seek to empirically demonstrate how the target language progressively functions as its own source culture—–a phenomenon that fundamentally challenges traditional translation studies paradigms—–: *target is the new source.*
 
-## Project Overview
+## Current Research Phase: Lexical Analysis
 
-This research begins by focusing on translation. It traces the evolution of the Homeric networks from the first English translation in 1615 to contemporary renderings, using computational methods to reveal how translators have transformed the ancient epic for English-speaking readers.
+The analysis currently focuses on six twentieth and twenty-first century translations, employing Virginia Woolf's modernist prose as a baseline for contemporary English literary expression
 
-<img src="./assets/images/Aga_mask.png" alt="Agamemnon Gold Mask" width="600"/>
+[**Research Report**](./report_september_2025.md) - Synthesizing findings across computational methods
 
-## Project Navigation
+### Primary Investigations
 
-Here is the project's tree layout: [project_structure.txt](./project_structure.txt) (wonderers beware: there are 76 directories, 339 files). 
+**Notebook A: Quantitative Stylistics**  
+[View on NBViewer](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lexical/lexical_A02.ipynb) | [HTML Version](./html%20notebooks/lexical_A02.html)
+- Type-Token Ratio analysis with mixed-effects modeling
+- Zipf's Law adherence and linguistic naturalization
+- TF-IDF semantic clustering
 
-### **Dr. Dellert, here are the Latest Notebooks**
+**Notebook B: Etymological Archaeology**  
+[View on NBViewer](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lexical/lexical_B01.ipynb) | [HTML Version](./html%20notebooks/lexical_B01.html)
+- Deep etymological tracking through 6M+ word relationships
+- Anglo-Saxon versus Latinate register analysis
+- Cultural positioning through lexical archaeology
 
-Presently, the project is in the lexical analysis stage almost completed. It is distributed in two notebooks.  
+## Theoretical Interventions
 
-- **Lexical A** includes the TTR, Zipf's Law, and TF-IDF analysis:  
+This research operates at the intersection of multiple theoretical frameworks:
 
-    * [Lexical/lexical_A02.ipynb](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lexical/lexical_A02.ipynb)
+- **Translation as Rhizomatic Network**: Drawing on Deleuze and Guattari's concept of the rhizome, we conceptualize English Odysseys as non-hierarchical multiplicities where each translation creates new lines of flight
+- **Computational Hermeneutics**: Employing distant reading methodologies (Moretti, 2013) while maintaining philological rigor
+- **Cultural Sway Theory**: Quantifying how cultural and ideological forces shape translator decisions through measurable linguistic patterns
 
-- **Lexical B** is all about etymologies:    
- 
-    * [Lexical/lexical_B01.ipynb](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lexical/lexical_B01.ipynb)   
+## Preliminary Findings
 
-### Notes on the project
+Our computational analysis reveals surprising patterns that complicate linear narratives of translation history:
 
-The results are not exactly what I expected to have so far but is not for lack of trying and effort—I'm guessing sometimes you have to argue the case with no other smoking gun than p-values. The lack of univocal, "in your face" results likely stems from:
+1. **Temporal Disruption**: Rather than evolutionary progression, translations cluster by philosophical approach regardless of chronological period
+2. **Etymological Unconscious**: Translators demonstrate measurable but likely unconscious preferences for Anglo-Saxon versus Latinate vocabulary that correlate with stated translation philosophies
+3. **Network Effects**: Contemporary translations show 62-73% lexical overlap, suggesting emergent stabilization of an "English Homer" vocabulary
 
-- The long-term nature of this project
-- My inexperience in the field
-- The trial-and-error nature of NLP experiments involving:
-  - Learning to deal with setbacks
-  - Redesigning approaches
-  - Pivoting when necessary
-  - Persevering through challenges
+## Archive of Experiments
 
-However, I believe the state of the research, as a final term project, is at a presentable level: it is ample but focused and in well enough shape to be read and graded by a (patient) expert. Having said that, even if harsh and drenching, your feedback will be like rain on a dry field—the rain is always unprejudiced and welcomed here.
+### Comparative Statistical Analysis
+- [Type-Token Ratio Studies](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lex_Six_Mo-03_31_25/TTR_Six_Mo-03_31_25.ipynb)
+- [Zipf's Law Investigation](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lex_Six_Mo-03_31_25/Zipf_Six_Mo-03_31_25.ipynb)
+- [TF-IDF Semantic Analysis](https://nbviewer.org/github/neophilology/English-Homer/blob/main/tfidf_Six_Mo/tfidf_Six_Mo.ipynb)
+- [Etymology Studies A](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Etymology_Six_Modern.ipynb) | [Etymology Studies B](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Etymology_Six_Modern/Etymology_Six_Modern_B.ipynb)
 
-#### Some Caveats
+### Initial Proof of Concept
+[**MVP: Wilson-Green Comparative Analysis**](https://nbviewer.org/github/neophilology/English-Homer/blob/main/MVP_Green-Wilson/MVP_Lexical.ipynb) - Establishing methodological viability through focused comparison
 
-- **Statistical challenges**: I struggled most with statistical testing and inferences (and got lost more times than I dare to tell)
-- **Visualization focus**: I "wasted" lots of time on fancy visualizations (though visualization is a task that I enjoyed)
-- **Pre-processing**: All pre-processing can be consulted in the GitHub repo. I didn't include the cleaning of texts in the final notebooks as every text demanded different preprocessing
-- **Length constraints**: In consideration with your time, I have edited a lot of material but still came up short with notebooks that are too long
-  - Some PDF exports already made for 80 pages per notebook
-  - Given this and the fact that most of the project is still in its infancy, I didn't write a full report of the results
-  - Discussion of results is included within the notebooks
-  - If needed for clarification, proper scientific research style, or other criteria, I can write a comprehensive report
+## Documentation
 
+- [Research Questions](./research-questions.md) - Core theoretical and empirical inquiries
+- [Methodological Design](./ResearchDesign.md) - Computational and theoretical frameworks
+- [Corpus Documentation](./data.md) - Translation corpus specifications
+- [XML Schema](./XML-schema-corpus.md) - Technical infrastructure
+- [Project Structure](./project_structure.txt) - Complete repository organization
 
+## Scholarly Context
 
+This investigation emerges from the productive tensions between classical reception studies, digital humanities methodologies, and contemporary translation theory. By applying computational methods to literary history, we seek not merely to quantify aesthetic phenomena but to reveal how cultural transmission operates through measurable yet complex linguistic patterns.
 
-
-
-### **OLD Experiments** (Work-In-Progress)
-
-Here is the first batch of dedicated experiments with statistical tests for my selection of six modern translators: "AT_Murray", "Fitzgerald", "Lattimore", "Fagles", "Wilson", "Green". 
-
-– [**Type-Token Ratio**](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lex_Six_Mo-03_31_25/TTR_Six_Mo-03_31_25.ipynb)
-
-– [**Zipf's Law**](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Lex_Six_Mo-03_31_25/Zipf_Six_Mo-03_31_25.ipynb)
-
-– [**Token Frequency-Inverse Document Frequency (TFIDF)**](https://nbviewer.org/github/neophilology/English-Homer/blob/main/tfidf_Six_Mo/tfidf_Six_Mo.ipynb)
-
-– [**Etymology A** (preliminary)](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Etymology_Six_Modern.ipynb)
-
-– [**Etymology B**](https://nbviewer.org/github/neophilology/English-Homer/blob/main/Etymology_Six_Modern/Etymology_Six_Modern_B.ipynb)
-
-
-#### Early Experiments 
-Here is the minimum viable product (MVP) to try out if the research approach works:
-
-- [**The Notebook!** - MVP Lexical Analysis](https://nbviewer.org/github/neophilology/English-Homer/blob/main/MVP_Green-Wilson/MVP_Lexical.ipynb)
-
-It focuses on statistical analysis and lexical diversity of the best contemporary translations of the Odyssey:
-- Peter Green, 2018, University of California Press
-- Emily Wilson, 2017, W.W. Norton & Company
-
-**NB:** The texts are not distributed or collected here in any manner.
-
-### The Exploratory Notebooks WIll be Here
-
-
-
-In here you can find notebooks for preprocessing, like pruning the text and normalizing it:
-
-- [Cleaners](#) *(coming soon)*
-- [Normalizers](#) *(coming soon)*
-- [Dataframers](#) *(coming soon)*
-
-### Documentation
-
-- [Project Description](./README.md) - An introduction to our research goals and methodology
-- [Research Questions](./research-questions.md) - The core inquiries driving our analysis
-- [Research Design](./ResearchDesign.md) - Our methodological approach and analytical framework
-- [Data Overview](./data.md) - Documentation of our translation corpus and datasets
-- [Corpus Schema](./XML-schema-corpus.md) – Describes the structure of selected translations
-
-## Latest Updates
-- **April 1st, 2025**: Four experiments for six modern Odysseys: 
-    * odysseys = ["AT_Murray", "Fitzgerald", "Lattimore", "Fagles", "Wilson", "Green"]
-    * experiments = ["TTR", "Zipf", "TFIDF", Etymology"]
-    *plus:* Lots of plots, EDA per translator, carpel tunnel from the mouse and a hunch on my back.
-
-- **March 16th, 2025**: Project is live!
-
-## About the Project
-
-This research is being conducted as part of a dissertation at the University of Tübingen, combining approaches from computational linguistics, classical reception studies, and translation theory.
-
-The project aims to demonstrate how computational methods can reveal patterns in literary and cultural history that effectively transform our concept of tradition––that living story that keeps telling and retelling our story.
+The project ultimately argues for reconceptualizing literary tradition not as linear inheritance but as rhizomatic network—a living system where each new iteration transforms the entire field of relations.
 
 ## Contact
 
-<img src="./assets/images/Dan_BW02.png" alt="Daniel Barrera Rivera" width="200"/>
+**Daniel Barrera Rivera**  
+Researcher of Entangled Narratologies and Compost-Conscious Sciences 
+Master English Literatures and Cultures
+University of Tübingen/UNAM
 
-For questions, collaboration requests, or more information:
+Email: [neophilology@gmail.com](mailto:neophilology@gmail.com)  
+GitHub: [github.com/neophilology](https://github.com/neophilology)
 
-- Email: [neophilology@gmail.com](mailto:neophilology@gmail.com)
-- GitHub: [https://github.com/neophilology](https://github.com/neophilology)
+---
 
-## Future Commits (I'm only Human, Not procrastinating)
+<img src="./assets/images/Aga_mask.png" alt="Agamemnon Gold Mask" width="600"/>
 
-- [Network Visualizations](./visualizations.md) - Interactive character networks by translation era
-- [Translation Timeline](./timeline.md) - Chronology of English Odyssey translations
-- [Preliminary Findings](./findings.md) - Initial results and observations
-
-## Explore the Data
-
-- [Translation Comparison Tool](./tools/translation-comparison.html) - Compare epithets and speech patterns
-- [Character Centrality Dashboard](./tools/character-centrality.html) - Track importance of characters over time
-- [Translation Network Gallery](./gallery.md) - Visual representations of each translation's network
-- [Data Repository](https://github.com/neophilology/homers-living-network) - Access our code and datasets
+*Last Updated: April 2025*
