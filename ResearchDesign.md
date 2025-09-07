@@ -1,136 +1,91 @@
-# Homer's Living Network: Tracing Character Relations Across English Odysseys
+# Homer's Living Network: Research Design
 
-## Chapter: Translation as Transformation
+## Computational Analysis of English Odyssey Translations
 
-### Research Design Step-by-Step
+### Current Research Framework
 
-**This digital humanities research integrates three complementary approaches:**
-* Computational analysis using data science and NLP techniques
-* Cultural-historical contextualization through literary studies
-* Translation theory to interpret linguistic and narrative shifts
+This investigation employs computational methods to interrogate the transformation of Homer's *Odyssey* across a century of English translation, examining how linguistic patterns reveal the complex negotiations between fidelity, cultural positioning, and translator agency.
 
-## Project Plan
+### 1. Corpus Architecture
 
-The objectives are described [here](research-question.md).
+**Primary Texts**
+- Six twentieth/twenty-first century translations (Murray 1919 to Green 2018)
+- Virginia Woolf's *The Voyage Out* (1915) as prose baseline
+- 168 analytical units (24 books × 7 texts)
+- Digital sources: Perseus Digital Library, Internet Archive, publisher editions
 
-### 1. Data Collection
+**Data Structure**
+- Standardized dataframes: translator, book_num, text, tokens
+- Preserved orthographic choices for stylistic analysis
+- Etymology database: Melo's Etymological Wordnet (6M+ entries)
 
-A detailed descrition of the data is [here](data.md)
-#### The Corpus
-* **What**: Comprehensive collection of significant English Odyssey translations (1615-2023)
-* **Selection criteria**: Cultural impact, innovative approach, temporal distribution
-* **Format**: Plain text files with consistent encoding and formatting
-* **Sources**: Project Gutenberg, HathiTrust Digital Library, Oxford Text Archive, publisher-authorized digital editions
+### 2. Methodological Architecture
 
-#### English Literature and Translations
-* **What**: Metadata catalog of Homeric reception in English literature
-* **Scope**: Translations, adaptations, and significant allusions from Middle Ages to present
-* **Variables**: Translator demographics, publication context, translation approach, critical reception
-* **Purpose**: Establishing contextual framework for network analysis
+**Lexical Analysis**
+- Type-Token Ratio with mixed-effects modeling
+- Standardized TTR (100-token segments)
+- Moving-average TTR for narrative dynamics
 
-#### Translations at a Glance
-* **What**: Comparative metrics database of textual features across translations
-* **Features**: Core character epithets, speech patterns, narrative emphasis, stylistic markers
-* **Format**: Structured database enabling efficient cross-translation comparison
-* **Goal**: Identifying patterns of character representation across temporal periods
+**Distributional Analysis**
+- Zipf's Law adherence through log-log regression
+- Bootstrap confidence intervals (1,000 iterations)
+- Slope comparison for linguistic naturalization
 
-### 2. Preprocessing
+**Semantic Networks**
+- TF-IDF vectorization at book level
+- Top-50 term extraction and overlap analysis
+- Etymology tracking through recursive algorithm
 
-#### Clean and Normalize
-* Remove paratextual elements (introductions, footnotes, page numbers)
-* Standardize spelling and punctuation conventions
-* Normalize character names and references across translations
-* Resolve OCR errors and inconsistencies in digitized texts
+**Statistical Framework**
+- Mixed-effects models (translator fixed, book random)
+- Bonferroni correction for multiple comparisons
+- Cohen's d for effect size measurement
 
-#### Structure and Tag
-* Implement TEI-inspired lightweight XML tagging system
-  - `<book>` divisions with consistent numbering
-  - `<speaker>` tags with standardized character IDs
-  - `<epithet>` markers with character attribution
-  - `<place>` tags for geographical references
-  - `<interaction>` tags to capture character relationships
-* Develop automated tagging pipeline with manual verification
-* Create alignment markers to enable cross-translation parallel analysis
+### 3. Analytical Trajectories
 
-#### Entity Resolution
-* Develop character identity resolution system
-  - Map variant names to canonical identifiers
-  - Resolve pronouns and indirect references
-  - Track disguises and transformations (especially for Athena/Odysseus)
-* Create character attribute database (divine/mortal, gender, status)
-* Establish relationship taxonomy (kinship, guest-host, antagonistic)
+**Current Findings**
+- Three translator clusters identified through multiple metrics
+- Etymology reveals unconscious Anglo-Saxon/Latin preferences
+- Absence of linear diachronic progression challenges temporal hypotheses
 
-### 3. Exploratory Data Analysis
+**Emergent Patterns**
+- 37 core terms stabilized across all translations
+- Contemporary translators show 62-73% lexical overlap
+- Book-level variance (11.459) indicates narrative-driven variation
 
-#### Lexical Analysis
-* Type-Token Ratio (TTR) calculation by translation, book, and character speech
-* Zipf Distribution Analysis to compare vocabulary richness
-* TF-IDF Vectorization to identify characteristic vocabulary by translation
-* Distinctive collocation patterns in character representations
-* Diachronic vocabulary shift analysis
+### 4. Theoretical Interventions
 
-#### Visualization Suite
-* Character presence heatmaps across books/translations
-* Word clouds of epithets by character and translation period
-* Principal Component Analysis of translation lexical features
-* Temporal evolution of key Homeric concepts (xenia, kleos, nostos)
-* Speech attribution proportions by character across translations
+**Translation as Rhizomatic Network**
+Rather than hierarchical descent from source to target, English Odysseys constitute non-linear multiplicities where each translation creates new lines of flight while responding to accumulated tradition.
 
-#### Network Preliminaries
-* Character co-occurrence matrices
-* Interaction frequency tables
-* Centrality measures by translation
-* Community detection to identify character groupings
-* Comparative network diagrams across translation periods
+**Computational Hermeneutics**
+The project navigates between distant reading's panoramic vision and philological precision, recognizing that quantitative patterns require qualitative interpretation.
 
-### 4. Network Analysis
+**Cultural Sway Theory**
+Measurable linguistic patterns reveal how ideological and aesthetic forces shape translation decisions, often operating below conscious awareness.
 
-#### Character Network Construction
-* Define network parameters:
-  - Nodes: Characters with attribute data
-  - Edges: Interactions, mentions, relationships
-  - Weights: Frequency and significance of connections
-* Create directed multigraphs representing narrative relationships
-* Develop temporal network models showing narrative progression
+### 5. Critical Reflections
 
-#### Comparative Network Metrics
-* Calculate and compare centrality measures across translations:
-  - Degree centrality (character prominence)
-  - Betweenness centrality (narrative bridging)
-  - Eigenvector centrality (connection to important characters)
-* Analyze community structures and character clustering
-* Trace changes in character importance across translation history
+**Methodological Transparency**
+- Etymology database limitations (2.31% circular references)
+- Sample constraints (6 of 80+ translations)
+- Genre effects (epic verse vs. prose baseline)
 
-#### Diachronic Network Evolution
-* Periodization analysis (Renaissance, Romantic, Victorian, Modern, Contemporary)
-* Gender-based network analysis to track changing representation
-* Divine/mortal interaction patterns across translation eras
-* Character agency metrics based on network position and speech attribution
+**Epistemological Positioning**
+This research emerges from the productive tension between computational objectivity and literary interpretation, acknowledging that our metrics themselves constitute interpretive choices.
 
-### 5. Cultural-Historical Contextualization
+### 6. Future Trajectories
 
-#### Translation in Context
-* Correlate network shifts with historical-cultural movements
-* Analyze translator backgrounds and theoretical approaches
-* Map network changes to literary movements and gender politics
-* Connect translation choices to contemporaneous classical scholarship
+**Immediate Extensions**
+- Expand to complete 80+ translation corpus
+- Include syntactic complexity measures
+- Develop translator "fingerprint" algorithms
 
-#### Reception Analysis
-* Examine paratextual framing of character relationships
-* Analyze critical reception focusing on character representation
-* Trace influence patterns between translations
-* Identify innovations and conservative tendencies in network representation
+**Theoretical Development**
+- Articulate how target language becomes source culture
+- Model intertextual influence networks
+- Theorize translation as cultural algorithm
 
-### 6. Synthesis and Conclusions
+---
 
-#### Pattern Recognition
-* Identify persistent vs. variable network features across translation history
-* Determine significant correlations between network metrics and cultural factors
-* Develop typology of translation approaches to Homeric character networks
-* Map trajectories of key character relationships through translation history
-
-#### Theoretical Implications
-* Articulate how network analysis enhances translation studies
-* Develop model for computational comparative translation analysis
-* Propose framework for understanding cultural evolution through network transformation
-* Outline methodological advances for digital classical reception studies
+*This framework represents not a fixed methodology but an evolving apparatus for understanding how literary tradition operates through measurable yet irreducibly complex linguistic transformations.*

@@ -64,6 +64,7 @@ Our computational analysis reveals surprising patterns that complicate linear na
 
 - [Research Questions](./research-questions.md) - Core theoretical and empirical inquiries
 - [Methodological Design](./ResearchDesign.md) - Computational and theoretical frameworks
+- [Bibliography](./bibliography.md) – Texts referenced, consulted, and composted in this work
 - [Corpus Documentation](./data.md) - Translation corpus specifications
 - [XML Schema](./XML-schema-corpus.md) - Technical infrastructure
 - [Project Structure](./project_structure.txt) - Complete repository organization
@@ -78,8 +79,10 @@ The project ultimately argues for reconceptualizing literary tradition not as li
 
 **Daniel Barrera Rivera**  
 Researcher of Entangled Narratologies and Compost-Conscious Sciences 
+
 Master English Literatures and Cultures
-University of Tübingen/UNAM
+
+University of Tübingen
 
 Email: [neophilology@gmail.com](mailto:neophilology@gmail.com)  
 GitHub: [github.com/neophilology](https://github.com/neophilology)
