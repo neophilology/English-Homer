@@ -91,4 +91,4 @@ GitHub: [github.com/neophilology](https://github.com/neophilology)
 
 <img src="./assets/images/Aga_mask.png" alt="Agamemnon Gold Mask" width="600"/>
 
-*Last Updated: April 2025*
+*Last Updated: September 2025*
