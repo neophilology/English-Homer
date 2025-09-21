@@ -26,9 +26,12 @@ The study corpus comprises seven texts: six English Odyssey translations and one
 Each text was obtained from authoritative digital sources or carefully digitalized by me: Murray from the Perseus Digital Library's Scaife Viewer, Fitzgerald from the Internet Archive, Green from EBSCO (with a digital license from Tübingen Univertsity), and contemporary translations from digital editions and scans (captured from an OCR to text Python script). Woolf's *The Voyage Out* (from Projet Gutenberg) serves as a baseline for contemporary English prose, providing a non-translation literary text against which to measure the distinctive features of translated (epic) discourse.
 
 
-<img src=".Lexical/lexical_A01_plots/translator_color_mapping-lexical_A01.png" alt="Color Mapping" width="800"/>
-Figure 1. Color Mapping of Translators.
-Fixed color palette assigned to each translator, ensuring consistent visual identification across all plots and libraries throughout the analysis.
+<figure>
+  <img src="./Lexical/lexical_A01_plots/translator_color_mapping-lexical_A01.png" alt="Color Mapping" width="800"/>
+  <figcaption>
+    <strong>Figure 1.</strong> Color Mapping of Translators. Fixed color palette assigned to each translator, ensuring consistent visual identification across all plots and libraries throughout the analysis.
+  </figcaption>
+</figure>
 
 The texts are segmented into 24 books, resulting in 168 analytical units (24 books × 7 texts). Initially, the translators' capitalization and punctuation were retained to preserve stylistic markers. However, all texts were individually preprocessed to address their specific requwerements. NLTK's and custom functions were used to tokenize the texts, and they were then converted to a standardized Pandas dataframe structure with columns for translator, book number, raw text, and tokens. 
 This process followed the pipeline:
