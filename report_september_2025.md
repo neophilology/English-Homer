@@ -64,13 +64,27 @@ Term Frequency-Inverse Document Frequency identified distinctive vocabulary for 
 
 Etymological analysis employed Gerard de Melo's Etymological Wordnet (2013), containing over 6 million etymological relationships. A custom recursive function traced each word of the Odysseys to its deepest etymological root, with cycle detection preventing infinite recursion. Words were categorized by language origin (Anglo-Saxon, Latin, Middle English, Old Norman, Ancient Greek, etc.).
 
-Figure 2. Etymology Root Proportions (Anglo-Saxon vs. Latin).
+<figure>
+  <img src="./Lexical/lexical_B01_plots/Etymology_Root_Proportions_AngLat-lexical_B01.png" alt="Anglo-Saxon vs latin" width="800"/>
+  <figcaption>
+    <strong>Figure 2.</strong> Etymology Root Proportions (Anglo-Saxon vs. Latin).
 Stacked bar chart showing the relative proportions of Anglo-Saxon and Latin word origins in each Odyssey translation. Distributions are normalized by token count per translator. The dashed line marks the Anglo-Saxon/Latin baseline derived from Fagles’ translation for reference.
+  </figcaption>
+</figure>
+
+
 
 Etymology distributions were normalized by token count and compared using cosine distance from mean distribution. Special attention was paid to the Anglo-Saxon versus Latin ratio as an indicator of stylistic register.
 
-Figure 3. Etymology Stylistic Divergence (Anglo-Saxon vs. Latin).
-Cosine distance of each translator’s Anglo-Saxon/Latin distribution from the mean distribution across all translations. Higher values indicate greater stylistic divergence in register, with respect to the balance between Anglo-Saxon and Latin roots.
+<figure>
+  <img src="./Lexical/lexical_B01_plots/Etymo_Stylistic_Divergence-lexical_B01.png" alt="Anglo-Saxon vs latin" width="800"/>
+  <figcaption>
+    <strong>Figure 3.</strong> Etymology Stylistic Divergence (Anglo-Saxon vs. Latin).
+Cosine distance of each translator’s Anglo-Saxon/Latin distribution from the mean distribution across all translations. Higher values indicate greater stylistic divergence in register, with respect to the balance between Anglo-Saxon and Latin roots.  
+  </figcaption>
+</figure>
+
+
 
 ### **2.3 Reproducibility**
 
@@ -95,14 +109,26 @@ A moving-average TTR with a 100-token window revealed dynamic patterns of lexica
 
 Contemporary translators (Wilson, Fagles, Green) display strikingly similar lexical density trajectories across books, suggesting a convergence in modern translation practices. Earlier translators, by contrast, exhibit greater divergence, reflecting more individualized stylistic choices.
 
+
 Figure 4 provides an overview of all translators across the 24 books. Despite stylistic and temporal differences, nearly all translations remain within the lexical density range established by Woolf, underscoring a shared constraint on lexical diversity.
+
+<figure>
+  <img src="./Lexical/lexical_A02_plots/moving_average_ttr-lexical_A02.png" alt="Moving-Average TTR" width="800"/>
+  <figcaption>
+    <strong>Figure 4.</strong> Moving-Average TTR Across 24 Books (All Translators).
+Line plot of moving-average TTR (100-token window) for all translations of the Odyssey. Despite differences in style and era, most translators remain within the lexical density range established by Woolf, highlighting broad stylistic convergence across the corpus.
+  </figcaption>
+</figure>
 
 A more focused comparison of Lattimore, Fagles, Fitzgerald, and Murray highlights distinct stylistic groupings (Figure 5). The poetic translators, Fagles and Fitzgerald, align closely with each other, maintaining consistently higher lexical density. By contrast, the prose-oriented translations of Lattimore (prose-like verse) and Murray (prose) form a parallel pair with lower density. This pairing effect illustrates how even a simple measure like moving-average TTR can capture both translator agency and the stylistic coherence of different translation strategies.
 
-Figure 4. Moving-Average TTR Across 24 Books (All Translators).
-Line plot of moving-average TTR (100-token window) for all translations of the Odyssey. Despite differences in style and era, most translators remain within the lexical density range established by Woolf, highlighting broad stylistic convergence across the corpus.
-Figure 5. Moving-Average TTR Comparison of Selected Translators.
-Lexical diversity trajectories for Lattimore, Fagles, Fitzgerald, and Murray across the 24 books. The poetic translators (Fagles, Fitzgerald) cluster closely together with higher lexical density, while the prose-oriented translators (Lattimore, Murray) track each other at lower levels, illustrating how moving-average TTR reveals both stylistic agency and translator consistency.
+
+<figure>
+  <img src="./Lexical/lexical_A02_plots/moving_average_ttr_selected_02-lexical_A02.png" alt="Moving-Average TTR Comparison of Selected Translators." width="800"/>
+  <figcaption>
+    <strong>Figure 5.</strong> Moving-Average TTR Comparison of Selected Translators. Lexical diversity trajectories for Lattimore, Fagles, Fitzgerald, and Murray across the 24 books. The poetic translators (Fagles, Fitzgerald) cluster closely together with higher lexical density, while the prose-oriented translators (Lattimore, Murray) track each other at lower levels, illustrating how moving-average TTR reveals both stylistic agency and translator consistency.
+  </figcaption>
+</figure>
 
 
 
@@ -112,15 +138,25 @@ Lexical diversity trajectories for Lattimore, Fagles, Fitzgerald, and Murray acr
 
 All translations demonstrated strong adherence to Zipf's Law with remarkably high fit quality (R² ≈ 0.98 for all translators). Log-log regression slopes ranged from -0.865 (Fitzgerald) to -0.997 (Lattimore), with ideal Zipfian distribution at -1.0.
 
-Figure 6. Zipf’s Law Across Translators.
-Log-log plot of word frequency versus rank for each Odyssey translation. All translators closely follow Zipf’s Law (R² ≈ 0.98), though with slight individual trajectories. Regression slopes range from -0.865 (Fitzgerald) to -0.997 (Lattimore), with the ideal Zipfian distribution corresponding to -1.0.
+
+<figure>
+  <img src="./Lexical/lexical_A02_plots/Log-Log-lexical_A02.png" alt="Zipf’s Law Across Translators." width="800"/>
+  <figcaption>
+    <strong>Figure 6.</strong> Zipf’s Law Across Translators. Log-log plot of word frequency versus rank for each Odyssey translation. All translators closely follow Zipf’s Law (R² ≈ 0.98), though with slight individual trajectories. Regression slopes range from -0.865 (Fitzgerald) to -0.997 (Lattimore), with the ideal Zipfian distribution corresponding to -1.0.
+  </figcaption>
+</figure>
+
 
 Bootstrap analysis (1,000 iterations) generated 95% confidence intervals revealing overlapping ranges for most translators. Fitzgerald showed the shallowest slope (95% CI: -1.1289, -1.1016), suggesting slightly weaker Zipfian adherence, while Lattimore's slope most closely approximated the theoretical ideal (95% CI: -1.2633, -1.2255).
 
 Despite only marginal variation in individual slope values, a one-way ANOVA detected statistically significant differences among translators (F = inf, p = ~0). These results confirm that all translations adhere closely to the expected Zipfian distribution, maintaining a natural linguistic flow.
+<figure>
+  <img src="./Lexical/lexical_A02_plots/Translator_Slope_Box-lexical_A02.png" alt="Comparison of Zipfian Slopes Across Translators." width="800"/>
+  <figcaption>
+    <strong>Figure 7.</strong> Comparison of Zipfian Slopes Across Translators. Scatterplot of log-log regression slopes for each translator, estimated per book of the Odyssey. Fagles, Green, and Wilson cluster closely together, reflecting parallel Zipfian patterns, while Lattimore and Fitzgerald exhibit the greatest divergence, marking the extremes of translation style within the corpus.
+  </figcaption>
+</figure>
 
-Figure 7. Comparison of Zipfian Slopes Across Translators.
-Scatterplot of log-log regression slopes for each translator, estimated per book of the Odyssey. Fagles, Green, and Wilson cluster closely together, reflecting parallel Zipfian patterns, while Lattimore and Fitzgerald exhibit the greatest divergence, marking the extremes of translation style within the corpus.
 
 ### **3.3 Content Distinctiveness**
 
@@ -128,8 +164,13 @@ TF-IDF analysis identified both shared core vocabulary and translator-specific l
 
 Overlap analysis revealed clustering patterns: Wilson-Fagles demonstrated the highest term overlap (73%), while Murray-Wilson showed the lowest (41%). The contemporary translator triad (Wilson, Fagles, Green) shared 62% of their top terms, suggesting convergent approaches to key concept representation.
 
-Figure 8. Venn Diagram of Top 50 TF-IDF Terms for Wilson, Fagles, and Green.
-The overlap highlights both a shared semantic core and translator-specific lexical emphases. Wilson and Fagles exhibit the highest overlap (73%), while Murray and Wilson share the least (41%). The contemporary translators (Wilson, Fagles, Green) collectively share 62% of their top terms, indicating convergent strategies in rendering key concepts of the Odyssey.
+<figure>
+  <img src="./Lexical/lexical_A02_plots/venn_Fagles_Wilson_Green-lexical_A02.png" alt="Venn Diagram of Top 50 TF-IDF Terms for Wilson, Fagles, and Green." width="800"/>
+  <figcaption>
+    <strong>Figure 8.</strong> Venn Diagram of Top 50 TF-IDF Terms for Wilson, Fagles, and Green. The overlap highlights both a shared semantic core and translator-specific lexical emphases. Wilson and Fagles exhibit the highest overlap (73%), while Murray and Wilson share the least (41%). The contemporary translators (Wilson, Fagles, Green) collectively share 62% of their top terms, indicating convergent strategies in rendering key concepts of the Odyssey.
+  </figcaption>
+</figure>
+
 
 ### **3.4 Etymological Preferences**
 
@@ -139,8 +180,15 @@ Etymology tracking successfully assigned roots to 97.69% of unique tokens, with 
 
 When filtering for non-English roots to examine deeper etymological preferences, significant variation emerged. The Anglo-Saxon to Latin ratio revealed distinct stylistic registers: Wilson demonstrated the strongest Anglo-Saxon preference (see Figure 9), while Fagles showed the highest Latin usage among translators (23% of filtered roots).
 
-Figure 9. Etymology Proportions by Translator.
-Stacked bar chart showing the relative contributions of Anglo-Saxon, Latin, Middle English, and other etymological categories across translations. Filtering for non-English roots highlights stylistic differences: Wilson exhibits the strongest Anglo-Saxon preference, whereas Fagles relies most heavily on Latin, reflecting distinct lexical registers among translators.
+<figure>
+  <img src="./Lexical/lexical_B01_plots/Etymology_Root_Proportions-lexical_B01.png" alt="Etymology Proportions by Translator." width="800"/>
+  <figcaption>
+    <strong>Figure 9.</strong> Etymology Proportions by Translator. Stacked bar chart showing the relative contributions of Anglo-Saxon, Latin, Middle English, and other etymological categories across translations. Filtering for non-English roots highlights stylistic differences: Wilson exhibits the strongest Anglo-Saxon preference, whereas Fagles relies most heavily on Latin, reflecting distinct lexical registers among translators.
+  </figcaption>
+</figure>
+
+
+
 
 #### **3.4.2 Etymology-Based Clustering**
 
@@ -151,8 +199,14 @@ PCA of etymology-weighted TF-IDF scores revealed three distinct clusters:
 - **Cluster 2**: Lattimore, Green (outlier pair)
 - **Cluster 3**: Woolf (isolated baseline)
 
-Figure 10. PCA of Etymology-Weighted TF-IDF Scores Across Translators.
-Scatterplot of principal components derived from etymology-weighted TF-IDF scores, illustrating stylistic divergence among translators. Woolf is the most distinctive (cosine distance = 0.01745), followed by Wilson (0.00121). Lattimore and Green form a moderately aligned pair, while Fitzgerald and Fagles remain closest to the mean distribution. Murray also lies near the mean, slightly farther than Fagles, highlighting both convergence and variation in etymological patterns across translations.
+<figure>
+  <img src="./Lexical/lexical_B01_plots/TF-IDF_PCA-lexical_B01.png" alt="PCA of Etymology-Weighted TF-IDF Scores Across Translators." width="800"/>
+  <figcaption>
+    <strong>Figure 10.</strong> PCA of Etymology-Weighted TF-IDF Scores Across Translators. Scatterplot of principal components derived from etymology-weighted TF-IDF scores, illustrating stylistic divergence among translators. Woolf is the most distinctive (cosine distance = 0.01745), followed by Wilson (0.00121). Lattimore and Green form a moderately aligned pair, while Fitzgerald and Fagles remain closest to the mean distribution. Murray also lies near the mean, slightly farther than Fagles, highlighting both convergence and variation in etymological patterns across translations.
+  </figcaption>
+</figure>
+
+
 
 ## **4. Discussion**
 
@@ -184,14 +238,20 @@ Several limitations constrain interpretation. The 2.31% circular reference rate 
 
 The unexpected clustering of Lattimore and Green, separated by five decades yet showing similar etymological profiles and lexical patterns, raises questions about whether certain translation approaches recur cyclically rather than evolving linearly. This finding warrants expansion to the full corpus of English Odysseys.
 
-5. Conclusions
-5.1 Key Findings
+## **5. Conclusions**
+
+### **5.1 Key Findings**
+
 This computational analysis reveals three primary insights. First, translator agency operates through measurable linguistic dimensions—lexical diversity ranges from Lattimore's -2.635 to  Fitzgerald's +7.515 relative to Murray's baseline, while etymological preferences diverge significantly from mean distributions (see Lexical B, cells 34-5). Second, translations cluster by philosophical approach/translator’s agenda rather than temporal period: Wilson-Fagles-Green form a contemporary triad in TF-IDF overlap (62-73%) yet diverge radically in etymology. Third, unconscious cultural positioning manifests through etymological substrate—Wilson's Anglo-Saxon preference aligns with stated accessibility goals, while Fagles's Latinate tendency brings a new color to the critical reception praising his "clear simplicity, luminous and unsentimental" style (Richard Jenkyns, "Heroic Enterprise").
 
 This project, as a proof of concept, successfully demonstrates that statistical lexical analysis and distant etymological readings can capture, albeit slightly, significant differences in translations that aid in classification and understanding how the target language creates a visible pattern through data science. This result encourages expanding the scope, experimenting with new methods, and utilizing a larger sample. Only through a substantial corpus will diachronic or cyclic patterns be revealed or dismissed statistically. However, once these patterns are established, a comprehensive model of 400 years of Odyssey translations in English will emerge.
-5.2 Answering Research Questions
+
+### **5.2 Answering Research Questions**
+
 Variation emerges primarily through lexical selection rather than syntactic architecture—all translations maintain Zipfian distributions (R² ≈ 0.98) despite individual stylistic differences. Translator agency proves strongest in etymological preference and vocabulary richness, operating within constraints of natural English expression. The mixed-effects model successfully captures individual innovation while accounting for book-level narrative variance (group variance 11.459). Crucially, the hypothesized diachronic progression finds no support—translator philosophy trumps chronology.
-5.3 Future Directions
+
+
+### **5.3 Future Directions**
+
 Expanding to the complete 80+ translation corpus would test whether these patterns hold across the full English Homer tradition, including the recent translation by Mendelsohn (2025). Syntactic complexity measures—parse tree depth, clause embedding—could reveal structural variation invisible to lexical analysis. Developing algorithmic "fingerprints" combining multiple metrics might enable automatic translator identification, validating my agency measurements.
 A new question emerges from the rejection of h1, if there is no clear diachronic sway, does that mean that the Odyssey is treated as an atemporal text, as a text that is referencing lexically a time out of the narrator’s present? and what role archaism play in this?
-kt
